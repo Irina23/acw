@@ -1,0 +1,64 @@
+.chromeperfectpixel-initial-block iframe,
+#chromeperfectpixel-supported-by {
+  display: none !important; }
+
+#__bs_notify__ {
+  display: none !important;
+  opacity: 0 !important; }
+
+@font-face {
+  font-family: "AvenirNextW1G-Demi";
+  src: url("../fonts/AvenirNextW1G-Demi.eot");
+  src: url("../fonts/AvenirNextW1G-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextW1G-Demi.otf") format("otf"), url("../fonts/AvenirNextW1G-Demi.svg") format("svg"), url("../fonts/AvenirNextW1G-Demi.woff") format("woff"), url("../fonts/AvenirNextW1G-Demi.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "AvenirNextW1G-Heavy";
+  src: url("../fonts/AvenirNextW1G-Heavy.eot");
+  src: url("../fonts/AvenirNextW1G-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextW1G-Heavy.otf") format("otf"), url("../fonts/AvenirNextW1G-Heavy.svg") format("svg"), url("../fonts/AvenirNextW1G-Heavy.woff") format("woff"), url("../fonts/AvenirNextW1G-Heavy.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "AvenirNextW1G-Regular";
+  src: url("../fonts/AvenirNextW1G-Regular.eot");
+  src: url("../fonts/AvenirNextW1G-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextW1G-Regular.otf") format("otf"), url("../fonts/AvenirNextW1G-Regular.svg") format("svg"), url("../fonts/AvenirNextW1G-Regular.woff") format("woff"), url("../fonts/AvenirNextW1G-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "BorgiaPro-Bold";
+  src: url("../fonts/BorgiaPro-Bold.eot");
+  src: url("../fonts/BorgiaPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BorgiaPro-Bold.otf") format("otf"), url("../fonts/BorgiaPro-Bold.svg") format("svg"), url("../fonts/BorgiaPro-Bold.woff") format("woff"), url("../fonts/BorgiaPro-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "BorgiaPro-Italic";
+  src: url("../fonts/BorgiaPro-Italic.eot");
+  src: url("../fonts/BorgiaPro-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/BorgiaPro-Italic.otf") format("otf"), url("../fonts/BorgiaPro-Italic.svg") format("svg"), url("../fonts/BorgiaPro-Italic.woff") format("woff"), url("../fonts/BorgiaPro-Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "BorgiaPro-Regular";
+  src: url("../fonts/BorgiaPro-Regular.eot");
+  src: url("../fonts/BorgiaPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BorgiaPro-Regular.otf") format("otf"), url("../fonts/BorgiaPro-Regular.svg") format("svg"), url("../fonts/BorgiaPro-Regular.woff") format("woff"), url("../fonts/BorgiaPro-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+  font-size: 16px; }
+  body p {
+    color: #545353;
+    line-height: 1.5em; }
+  body .bx-wrapper {
+    margin: auto; }
+
+* {
+  box-sizing: border-box; }
