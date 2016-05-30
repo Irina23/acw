@@ -49,16 +49,14 @@
   font-weight: normal; }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "BorgiaPro-Regular", Arial, sans-serif;
   padding: 0;
   margin: 0;
   line-height: 1em;
   font-size: 16px; }
   body p {
-    color: #545353;
+    color: #7b7b7b;
     line-height: 1.5em; }
-  body .bx-wrapper {
-    margin: auto; }
 
 * {
   box-sizing: border-box; }
@@ -66,3 +64,16 @@ body {
 #header .menu-block li {
   display: inline-block;
   vertical-align: middle; }
+  #header .menu-block li a {
+    text-transform: uppercase;
+    font-family: "AvenirNextW1G-Demi", sans-serif;
+    font-size: 12px;
+    line-height: 1em;
+    color: #000;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    #header .menu-block li a:hover {
+      color: #00d89f;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      text-decoration: none; }
