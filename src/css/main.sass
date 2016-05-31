@@ -346,6 +346,7 @@ body
       transition: all 0.35s
       display: table-cell
       vertical-align: middle
+      font-family: "BorgiaPro-Bold", sans-serif
 
   .block_desc
     width: 620px
@@ -362,7 +363,7 @@ body
       &:after
         width: 2px
         height: 26px
-        background: #00d89f
+        background: $main-color
         content: ""
         position: absolute
         top: 50%
@@ -412,10 +413,74 @@ body
 
 
 
-.block_rewieves
-  padding: 80px 0
+.block_reviews
+  padding: 80px 0 65px
+  .list_reviews
+    position: relative
   .block_text
-    margin-bottom: 90px
+    margin-bottom: 75px
+  .item_reviews
+    padding: 15px 0
+
+    .img-holder
+      width: 260px
+      height: 260px
+      padding: 20px
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+      margin: 0 35px
+      display: inline-block
+      vertical-align: middle
+
+    .text_reviews
+      display: inline-block
+      vertical-align: middle
+      width: 440px
+      .text
+
+        max-height: 136px
+        overflow: hidden
+        color: #000
+        font-size: 24px
+        line-height: 1.5em
+        margin-bottom: 30px
+
+      .name
+
+        color: $main-color
+        font-family: "BorgiaPro-Italic", sans-serif
+        font-size: 18px
+        line-height: 1em
+        margin-bottom: 7px
+
+      .post
+
+        color: #b3b3b3
+        font-family: Arial, sans-serif
+        font-size: 14px
+        font-weight: 400
+        line-height: 1em
+
+  .owl-controls
+    .owl-prev,
+    .owl-next
+      width: 24px
+      height: 45px
+      background: url("../img/icons/next.svg") no-repeat
+      position: absolute
+      top: 50%
+      margin-top: -12px
+      right: -80px
+      text-indent: -99999px
+    .owl-prev
+      transform: rotate(180deg)
+      left: -80px
+      right: inherit
+
+
+
+
+
+
 
 
 .block_contacts
@@ -423,17 +488,9 @@ body
 
   background: url("../img/bg/bg_footer.jpg") no-repeat bottom center #f1f2f4
 
-  //&:before
-    height: 685px
 
-    position: absolute
-    top: -80px
-    left: 0
-    width: 100%
-    content: ""
-    z-index: 0
   .wrap
-    //background: linear-gradient(180deg, #fff 0%, #efefef 50%, #f0f0f0 100%)
+
     background-image: linear-gradient(180deg, #fff 0%, transparent 100%)
     padding: 100px 0 400px
     position: relative
@@ -441,6 +498,27 @@ body
 
   .block_text
     margin-bottom: 80px
+    color: #000
+    font-family: "BorgiaPro-Regular", sans-serif
+    font-size: 48px
+    letter-spacing: -0.27px
+    line-height: 1em
+
+    i
+      font-style: normal
+      color: $main-color
+      position: relative
+      padding-right: 20px
+      &:after
+        width: 5px
+        height: 53px
+        background: $main-color
+        display: inline-block
+        position: absolute
+        top: 50%
+        right: 0
+        margin-top: -27px
+        content: ""
 
   .list_contacts
     text-align: center
