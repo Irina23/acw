@@ -178,7 +178,11 @@ body {
       margin-bottom: 20px;
       position: relative;
       z-index: 2; }
+    .block_img .container #typed-strings {
+      display: none; }
     .block_img .container .block_text {
+      min-height: 230px; }
+    .block_img .container #typed {
       width: 460px;
       position: relative;
       font-family: "BorgiaPro-Regular", sans-serif;
@@ -187,21 +191,22 @@ body {
       letter-spacing: -0.27px;
       line-height: 1.2em;
       color: #000;
-      z-index: 2; }
-      .block_img .container .block_text i {
+      z-index: 2;
+      vertical-align: middle;
+      display: inline; }
+      .block_img .container #typed + .typed-cursor {
+        width: 4px;
+        height: 42px;
+        background: #00d89f;
+        display: inline-block;
+        position: relative;
+        z-index: 3;
+        vertical-align: middle; }
+      .block_img .container #typed i {
         color: #00d89f;
         font-style: normal;
         position: relative;
         padding-right: 20px; }
-        .block_img .container .block_text i span {
-          width: 4px;
-          height: 42px;
-          background: #00d89f;
-          display: inline-block;
-          position: absolute;
-          top: 50%;
-          right: 0;
-          margin-top: -21px; }
 
 .block_services {
   padding: 60px 0; }

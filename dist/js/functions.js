@@ -12,7 +12,7 @@ jQuery(document).ready(function() {
         }*/
 
 
-        // Rewieves
+        // Rewieves slider
         $('.list_reviews').owlCarousel({
             loop:true,
             nav:true,
@@ -33,7 +33,7 @@ jQuery(document).ready(function() {
     });
 
 
-
+   //advantages animation
     $('.block_advantages').on('mousemove', function () {
 
         jQuery(".number").addClass('animated fadeInLeft').css("opacity", 1);
@@ -41,6 +41,29 @@ jQuery(document).ready(function() {
 
     });
 
-
+    //print text
+    $(function () {
+        $("#typed").typed({
+            //strings: ["My name is <br>Anke Carola Walter<br>I am an independent <br><i>copywriter</i>"],
+            //strings: [],
+            stringsElement: $("#typed-strings"),
+            typeSpeed: 70,
+            cursorChar: ""
+        });
+    });
+    /*$(document).ready(function(){
+        $.fn.animate_Text = function() {
+            var string = this.text();
+            return this.each(function(){
+                var $this = $(this);
+                $this.html(string.replace(/./g, '<span class="new">$&</span>'));
+                $this.find('span.new').each(function(i, el){
+                    setTimeout(function(){ $(el).addClass('div_opacity'); }, 40 * i);
+                });
+            });
+        };
+        $('.block_img .block_text').show();
+        $('.block_img .block_text').animate_Text();
+    });*/
 
 });
