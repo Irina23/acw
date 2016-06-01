@@ -68,19 +68,12 @@ jQuery(document).ready(function() {
             cursorChar: ""
         });
     });
-    /*$(document).ready(function(){
-        $.fn.animate_Text = function() {
-            var string = this.text();
-            return this.each(function(){
-                var $this = $(this);
-                $this.html(string.replace(/./g, '<span class="new">$&</span>'));
-                $this.find('span.new').each(function(i, el){
-                    setTimeout(function(){ $(el).addClass('div_opacity'); }, 40 * i);
-                });
-            });
-        };
-        $('.block_img .block_text').show();
-        $('.block_img .block_text').animate_Text();
-    });*/
+
+    //mobile menu
+    jQuery(".navbar-toggle").on("click", function(){
+        jQuery(this).next().slideToggle();
+        //jQuery(this).toggleClass("active");
+        //jQuery(".mobile-navbar").toggleClass("active");
+    });
 
 });
