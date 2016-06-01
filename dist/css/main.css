@@ -181,9 +181,9 @@ body {
     .block_img .container #typed-strings {
       display: none; }
     .block_img .container .block_text {
-      min-height: 230px; }
+      min-height: 230px;
+      width: 460px; }
     .block_img .container #typed {
-      width: 460px;
       position: relative;
       font-family: "BorgiaPro-Regular", sans-serif;
       font-size: 48px;
@@ -201,12 +201,12 @@ body {
         display: inline-block;
         position: relative;
         z-index: 3;
-        vertical-align: middle; }
+        vertical-align: middle;
+        margin-left: 12px; }
       .block_img .container #typed i {
         color: #00d89f;
         font-style: normal;
-        position: relative;
-        padding-right: 20px; }
+        position: relative; }
 
 .block_services {
   padding: 60px 0; }
