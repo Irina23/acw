@@ -251,8 +251,9 @@ body
   .item_service
     display: inline-block
     vertical-align: top
-    width: 49.7%
+    width: 50%
     position: relative
+    float: left
     &:hover
       .mask
         opacity: 1
@@ -501,6 +502,23 @@ body
   .item_reviews
     padding: 15px 0
 
+    &.active-slide
+      .img-holder
+        opacity: 1
+        transition: opacity 1s
+        animation-delay: 1s
+        animation-duration: 1s
+        animation-fill-mode: both
+        animation: slideInLeft 0.8s
+      .text_reviews
+        opacity: 1
+        transition: opacity 1s
+        animation-delay: 1s
+        animation-duration: 1s
+        animation-fill-mode: both
+        animation: slideInRight 0.8s
+
+
 
 
 
@@ -547,9 +565,11 @@ body
         font-weight: 400
         line-height: 1em
 
-  .owl-controls
-    .owl-prev,
-    .owl-next
+  .bx-pager
+    display: none
+  .bx-controls-direction
+    .bx-prev,
+    .bx-next
       width: 24px
       height: 45px
       background: url("../img/icons/next.svg") no-repeat
@@ -558,7 +578,7 @@ body
       margin-top: -12px
       right: -80px
       //text-indent: -99999px
-    .owl-prev
+    .bx-prev
       transform: rotate(180deg)
       left: -80px
       right: inherit
@@ -660,3 +680,51 @@ body
               color: $main-color
               transition: all 0.35s
               text-decoration: none
+
+
+
+
+
+@media screen and (max-width: 1024px)
+  .block_services .item_service
+    margin-bottom: 10px
+    width: calc(50% - 5px)
+    &:nth-child(2n+1)
+      margin-right: 10px
+    .mask
+      opacity: 1
+    .block_service
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+
+
+  .block_advantages .list_advantages .item_advantage
+    .block_advantage, .number
+      opacity: 1
+
+
+
+@media screen and (max-width: 1020px)
+  #header .menu-block
+    margin-right: 0
+  .block_reviews
+
+    .bx-controls-direction
+      .bx-prev,
+      .bx-next
+
+        right: -40px
+
+      .bx-prev
+
+        left: -40px
+  .block_industries
+    .list_industries
+      margin: 0 -48px 100px
+
+    li
+      span
+        width: 200px
+        height: 120px
+
+  .block_img .container:after
+    right: 0

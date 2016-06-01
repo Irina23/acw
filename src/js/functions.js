@@ -13,7 +13,7 @@ jQuery(document).ready(function() {
 
 
         // Rewieves slider
-        $('.list_reviews').owlCarousel({
+        /*$('.list_reviews').owlCarousel({
             loop:true,
             nav:true,
             autoplay:true,
@@ -29,7 +29,24 @@ jQuery(document).ready(function() {
                     items:1
                 }
             }
-        })
+        })*/
+
+
+        jQuery('.list_reviews').bxSlider({
+            nextText: "",
+            prevText: "",
+            auto: true,
+            pause: 7000,
+            onSliderLoad: function () {
+                $('.item_reviews:not(.bx-clone)').eq(0).addClass('active-slide').siblings().removeClass('active-slide');
+            },
+            onSlideAfter: function ($slideElement) {
+                $($slideElement).addClass('active-slide').siblings().removeClass('active-slide');
+            }
+
+
+        });
+        
     });
 
 

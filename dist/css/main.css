@@ -215,8 +215,9 @@ body {
   .block_services .item_service {
     display: inline-block;
     vertical-align: top;
-    width: 49.7%;
-    position: relative; }
+    width: 50%;
+    position: relative;
+    float: left; }
     .block_services .item_service:hover .mask {
       opacity: 1;
       -webkit-transition: opacity 0.5s;
@@ -416,6 +417,30 @@ body {
             animation: slideInRight 0.8s; }
   .block_reviews .item_reviews {
     padding: 15px 0; }
+    .block_reviews .item_reviews.active-slide .img-holder {
+      opacity: 1;
+      -webkit-transition: opacity 1s;
+      transition: opacity 1s;
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      -webkit-animation: slideInLeft 0.8s;
+              animation: slideInLeft 0.8s; }
+    .block_reviews .item_reviews.active-slide .text_reviews {
+      opacity: 1;
+      -webkit-transition: opacity 1s;
+      transition: opacity 1s;
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      -webkit-animation: slideInRight 0.8s;
+              animation: slideInRight 0.8s; }
     .block_reviews .item_reviews .img-holder {
       width: 260px;
       height: 260px;
@@ -449,8 +474,10 @@ body {
         font-size: 14px;
         font-weight: 400;
         line-height: 1em; }
-  .block_reviews .owl-controls .owl-prev,
-  .block_reviews .owl-controls .owl-next {
+  .block_reviews .bx-pager {
+    display: none; }
+  .block_reviews .bx-controls-direction .bx-prev,
+  .block_reviews .bx-controls-direction .bx-next {
     width: 24px;
     height: 45px;
     background: url("../img/icons/next.svg") no-repeat;
@@ -458,7 +485,7 @@ body {
     top: 50%;
     margin-top: -12px;
     right: -80px; }
-  .block_reviews .owl-controls .owl-prev {
+  .block_reviews .bx-controls-direction .bx-prev {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
     left: -80px;
@@ -548,3 +575,32 @@ body {
           -webkit-transition: all 0.35s;
           transition: all 0.35s;
           text-decoration: none; }
+
+@media screen and (max-width: 1024px) {
+  .block_services .item_service {
+    margin-bottom: 10px;
+    width: calc(50% - 5px); }
+    .block_services .item_service:nth-child(2n+1) {
+      margin-right: 10px; }
+    .block_services .item_service .mask {
+      opacity: 1; }
+    .block_services .item_service .block_service {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
+  .block_advantages .list_advantages .item_advantage .block_advantage, .block_advantages .list_advantages .item_advantage .number {
+    opacity: 1; } }
+
+@media screen and (max-width: 1020px) {
+  #header .menu-block {
+    margin-right: 0; }
+  .block_reviews .bx-controls-direction .bx-prev,
+  .block_reviews .bx-controls-direction .bx-next {
+    right: -40px; }
+  .block_reviews .bx-controls-direction .bx-prev {
+    left: -40px; }
+  .block_industries .list_industries {
+    margin: 0 -48px 100px; }
+  .block_industries li span {
+    width: 200px;
+    height: 120px; }
+  .block_img .container:after {
+    right: 0; } }
