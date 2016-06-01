@@ -16,8 +16,8 @@ jQuery(document).ready(function() {
         $('.list_reviews').owlCarousel({
             loop:true,
             nav:true,
-            //autoplay:true,
-            //autoplayTimeout: 7000,
+            autoplay:true,
+            autoplayTimeout: 7000,
             responsive:{
                 0:{
                     items:1
@@ -30,6 +30,15 @@ jQuery(document).ready(function() {
                 }
             }
         })
+    });
+
+
+
+    $('.block_advantages').on('mousemove', function () {
+
+        jQuery(".number").addClass('animated fadeInLeft').css("opacity", 1);
+        jQuery(".block_advantage").addClass('animated fadeInRight').css("opacity", 1);
+
     });
 
 

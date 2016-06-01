@@ -237,11 +237,11 @@ body
     &:hover
       .mask
         opacity: 1
-        //transition: opacity 0.3s
+        transition: opacity 0.5s
       .block_service
 
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
-        //transition: box-shadow 0.3s
+        transition: box-shadow 0.5s
 
     &:nth-child(2n+1)
       .block_service
@@ -257,25 +257,28 @@ body
           float: left
     .mask
       opacity: 0
-      //transition: opacity 0.3s
+      transition: opacity 0.5s
       position: relative
       z-index: 1
       .img-holder
         width: 350px
         height: 280px
-        //float: right
+
     .block_service
       padding: 40px 50px
       cursor: pointer
-      //transition: box-shadow 0.3s
+      transition: box-shadow 0.5s
       position: absolute
       top: 50%
-      transform: translate(0, -50%)
+      //transform: translate(0, -50%)
       background: rgba(255, 255, 255, 0.9)
       width: 360px
+      height: 200px
+      overflow: hidden
       box-sizing: border-box
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0)
       z-index: 2
+      margin-top: -100px
 
 
       h3
@@ -383,6 +386,20 @@ body
 .block_advantages
   padding: 80px 0 70px
   background-color: #f5f5f6
+  //&:hover
+    .list_advantages
+      .item_advantage
+        .number
+          //opacity: 1
+          visibility: visible
+          animation-delay: 0.3s
+          animation-name: fadeIn
+        .block_advantage
+          //opacity: 1
+          visibility: visible
+          animation-delay: 0.5s
+          animation-name: fadeIn
+
 
   .block_text
     margin-bottom: 75px
@@ -394,17 +411,26 @@ body
       clear: both
       &:nth-child(2n)
         float: right
+      &:nth-child(2)
+        .number, .block_advantage
+          animation-delay: 0.5s
+      &:nth-child(3)
+        .number, .block_advantage
+          animation-delay: 0.8s
+      &:nth-child(4)
+        .number, .block_advantage
+          animation-delay: 1s
       .number
-
+        opacity: 0
         text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
         color: #fff
         font-family: "BorgiaPro-Bold", sans-serif
         font-size: 140px
-        //font-weight: 700
         letter-spacing: 9.33px
         line-height: 140px
         display: inline-block
         vertical-align: top
+
       .block_advantage
         display: inline-block
         vertical-align: top
@@ -414,6 +440,10 @@ body
         font-size: 15px
         line-height: 22px
         margin-top: 25px
+        opacity: 0
+
+
+
 
 
 
@@ -424,8 +454,36 @@ body
     position: relative
   .block_text
     margin-bottom: 75px
+  .owl-item.active
+    .item_reviews
+      //opacity: 1
+      //transition: opacity 3s
+      //animation-delay: 1s
+      //animation-duration: 1s
+      //animation-fill-mode: both
+      //animation: slideInDown 0.8s
+      .img-holder
+        opacity: 1
+        transition: opacity 2s
+        animation-delay: 1s
+        animation-duration: 1s
+        animation-fill-mode: both
+        animation: slideInLeft 0.8s
+      .text_reviews
+        opacity: 1
+        transition: opacity 2s
+        animation-delay: 1s
+        animation-duration: 1s
+        animation-fill-mode: both
+        animation: slideInRight 0.8s
+
+
+
   .item_reviews
     padding: 15px 0
+
+
+
 
     .img-holder
       width: 260px
@@ -435,11 +493,16 @@ body
       margin: 0 35px
       display: inline-block
       vertical-align: middle
+      opacity: 0
+      //transition: opacity 0.5s
+
 
     .text_reviews
       display: inline-block
       vertical-align: middle
       width: 440px
+      opacity: 0
+
       .text
 
         max-height: 136px
