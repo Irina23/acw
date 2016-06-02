@@ -776,4 +776,15 @@ body {
   .block_contacts .list_contacts .item_contact {
     float: none !important;
     margin: 0 15px 30px;
-    text-align: center; } }
+    text-align: center; }
+  .block_img:before {
+    background: -webkit-linear-gradient(left, #f1f2f4 0%, #f4f5f7 100%);
+    background: linear-gradient(90deg, #f1f2f4 0%, #f4f5f7 100%);
+    width: 100%; }
+  .block_img:after {
+    display: none; }
+  .block_reviews .bx-controls-direction .bx-prev, .block_reviews .bx-controls-direction .bx-next {
+    width: 16px;
+    height: 30px;
+    margin-top: -15px;
+    background-size: 100%; } }
