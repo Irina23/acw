@@ -590,12 +590,13 @@ body {
   display: none;
   opacity: 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  width: auto;
-  border: 0; }
+  border: 0;
+  width: 450px;
+  margin-left: -225px;
+  height: 465px;
+  margin-top: -232px; }
   .modal_div .content-holder {
     padding: 40px;
     overflow: auto;
@@ -692,9 +693,9 @@ body {
 @media screen and (max-width: 1020px) {
   #header .menu-block {
     margin-right: 0; }
-  .block_reviews .bx-controls-direction .bx-next {
+  .block_reviews .bx-controls-direction .bx-next, .block_reviews .bx-controls-direction .owl-next, .block_reviews .owl-controls .bx-next, .block_reviews .owl-controls .owl-next {
     right: -40px; }
-  .block_reviews .bx-controls-direction .bx-prev {
+  .block_reviews .bx-controls-direction .bx-prev, .block_reviews .bx-controls-direction .owl-prev, .block_reviews .owl-controls .bx-prev, .block_reviews .owl-controls .owl-prev {
     left: -40px; }
   .block_industries .list_industries {
     margin: 0 -48px 100px; }
@@ -717,9 +718,9 @@ body {
     margin: 0 -36px 100px; }
   .block_industries li {
     margin: 0 5px 12px; }
-  .block_reviews .bx-controls-direction .bx-next {
+  .block_reviews .bx-controls-direction .bx-next, .block_reviews .bx-controls-direction .owl-next, .block_reviews .owl-controls .bx-next, .block_reviews .owl-controls .owl-next {
     right: -24px; }
-  .block_reviews .bx-controls-direction .bx-prev {
+  .block_reviews .bx-controls-direction .bx-prev, .block_reviews .bx-controls-direction .owl-prev, .block_reviews .owl-controls .bx-prev, .block_reviews .owl-controls .owl-prev {
     left: -24px; } }
 
 @media screen and (max-width: 855px) {
@@ -729,10 +730,10 @@ body {
     right: 0; }
   .block_industries .list_industries {
     margin: 0 0 100px; }
-  .block_reviews .bx-controls-direction .bx-next {
-    right: -15px; }
-  .block_reviews .bx-controls-direction .bx-prev {
-    left: -15px; } }
+  .block_reviews .bx-controls-direction .bx-next, .block_reviews .bx-controls-direction .owl-next, .block_reviews .owl-controls .bx-next, .block_reviews .owl-controls .owl-next {
+    right: 0; }
+  .block_reviews .bx-controls-direction .bx-prev, .block_reviews .bx-controls-direction .owl-prev, .block_reviews .owl-controls .bx-prev, .block_reviews .owl-controls .owl-prev {
+    left: 0; } }
 
 @media screen and (max-width: 800px) {
   .container {
@@ -781,17 +782,6 @@ body {
     vertical-align: middle; }
   .block_reviews {
     padding: 60px 0 0; }
-    .block_reviews .block_text {
-      margin-bottom: 40px; }
-    .block_reviews .item_reviews .img-holder {
-      display: block;
-      margin: 0 auto 40px;
-      opacity: 1; }
-    .block_reviews .item_reviews .text_reviews {
-      display: block;
-      margin: auto;
-      opacity: 1;
-      width: 100%; }
   #header .container {
     position: relative; }
   #header .menu-block {
@@ -874,8 +864,25 @@ body {
     width: 100%; }
   .block_img:after {
     display: none; }
-  .block_reviews .bx-controls-direction .bx-prev, .block_reviews .bx-controls-direction .bx-next {
+  .block_reviews .item_reviews .text_reviews {
+    padding: 0 20px; }
+  .block_reviews .bx-controls-direction .bx-prev, .block_reviews .bx-controls-direction .bx-next, .block_reviews .bx-controls-direction .owl-next, .block_reviews .bx-controls-direction .owl-prev, .block_reviews .owl-controls .bx-prev, .block_reviews .owl-controls .bx-next, .block_reviews .owl-controls .owl-next, .block_reviews .owl-controls .owl-prev {
     width: 16px;
     height: 30px;
     margin-top: -15px;
-    background-size: 100%; } }
+    background-size: 100%; }
+  .block_reviews .bx-controls-direction .bx-next, .block_reviews .bx-controls-direction .owl-next, .block_reviews .owl-controls .bx-next, .block_reviews .owl-controls .owl-next {
+    right: -10px; }
+  .block_reviews .bx-controls-direction .bx-prev, .block_reviews .bx-controls-direction .owl-prev, .block_reviews .owl-controls .bx-prev, .block_reviews .owl-controls .owl-prev {
+    left: -10px; } }
+
+@media screen and (max-width: 500px) {
+  .modal_div {
+    width: calc(100% - 40px);
+    margin-left: 0;
+    left: 20px; }
+    .modal_div input[type="text"], .modal_div textarea {
+      width: 100%; }
+    .modal_div .button {
+      display: block;
+      padding: 18px 0; } }

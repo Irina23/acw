@@ -695,11 +695,14 @@ body
   display: none
   opacity: 0
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
-  transform: translate(-50%, -50%)
+  //transform: translate(-50%, -50%)
   top: 50%
   left: 50%
-  width: auto
   border: 0
+  width: 450px
+  margin-left: -225px
+  height: 465px
+  margin-top: -232px
   .content-holder
     padding: 40px
     overflow: auto
@@ -822,11 +825,11 @@ body
     margin-right: 0
   .block_reviews
 
-    .bx-controls-direction
-      .bx-next
+    .bx-controls-direction, .owl-controls
+      .bx-next, .owl-next
         right: -40px
 
-      .bx-prev
+      .bx-prev, .owl-prev
         left: -40px
   .block_industries
     .list_industries
@@ -860,11 +863,11 @@ body
 
   .block_reviews
 
-    .bx-controls-direction
-      .bx-next
+    .bx-controls-direction, .owl-controls
+      .bx-next, .owl-next
         right: -24px
 
-      .bx-prev
+      .bx-prev, .owl-prev
         left: -24px
 
 
@@ -879,12 +882,12 @@ body
   .block_industries .list_industries
     margin: 0 0 100px
   .block_reviews
-    .bx-controls-direction
-      .bx-next
-        right: -15px
+    .bx-controls-direction, .owl-controls
+      .bx-next, .owl-next
+        right: 0
 
-      .bx-prev
-        left: -15px
+      .bx-prev, .owl-prev
+        left: 0
 
 
 
@@ -948,18 +951,7 @@ body
 
   .block_reviews
     padding: 60px 0 0
-    .block_text
-      margin-bottom: 40px
-    .item_reviews
-      .img-holder
-        display: block
-        margin: 0 auto 40px
-        opacity: 1
-      .text_reviews
-        display: block
-        margin: auto
-        opacity: 1
-        width: 100%
+
 
 
   #header
@@ -1066,9 +1058,31 @@ body
       display: none
 
 
-  .block_reviews .bx-controls-direction
-    .bx-prev, .bx-next
-      width: 16px
-      height: 30px
-      margin-top: -15px
-      background-size: 100%
+  .block_reviews
+    .item_reviews .text_reviews
+      padding: 0 20px
+    .bx-controls-direction, .owl-controls
+      .bx-prev, .bx-next, .owl-next, .owl-prev
+        width: 16px
+        height: 30px
+        margin-top: -15px
+        background-size: 100%
+        .block_reviews
+      .bx-next, .owl-next
+        right: -10px
+
+      .bx-prev, .owl-prev
+        left: -10px
+
+
+@media screen and (max-width: 500px)
+
+  .modal_div
+    width: calc(100% - 40px)
+    margin-left: 0
+    left: 20px
+    input[type="text"], textarea
+      width: 100%
+    .button
+      display: block
+      padding: 18px 0
