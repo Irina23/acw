@@ -16,8 +16,8 @@ jQuery(document).ready(function() {
         $('.list_reviews').owlCarousel({
             loop:true,
             nav:true,
-            //autoplay:true,
-            //autoplayTimeout: 7000,
+            autoplay:true,
+            autoplayTimeout: 7000,
             responsive:{
                 0:{
                     items:1
@@ -59,13 +59,13 @@ jQuery(document).ready(function() {
     });
 
     //print text
-    /*$(function () {
+    $(function () {
         $("#typed").typed({
             stringsElement: $("#typed-strings"),
-            typeSpeed: 70,
+            typeSpeed: 130,
             cursorChar: ""
         });
-    });*/
+    });
 
     //mobile menu
     jQuery(".navbar-toggle").on("click", function(){
@@ -108,6 +108,45 @@ jQuery(document).ready(function() {
                     $('body').removeClass('no-scroll');
                 }
             );
+    });
+
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27)
+            modal.animate({opacity: 0}, 200,
+                function(){
+                    $(this).css('display', 'none');
+                    overlay.fadeOut(400);
+                    $(".success_box").removeClass('show');
+                    $('body').removeClass('no-scroll');
+                   
+                }
+            );
+    });
+
+
+
+
+
+    //form validate
+    jQuery("form").validate({
+
+        rules:{
+            name:{
+                required: true,
+                minlength: 2
+            },
+            phone:{
+                required: true,
+                digits: true
+            },
+            email:{
+                required: true,
+                email: true
+            },
+            address:{
+                required: true
+            }
+        }
     });
     
 

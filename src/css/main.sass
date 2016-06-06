@@ -126,6 +126,27 @@ body
   .logo
     display: inline-block
     vertical-align: middle
+    height: 42px
+    a
+      color: #2d2e2b
+      line-height: 1em
+      font-size: 30px
+      font-family: "AvenirNextW1G-Demi", sans-serif
+      &:hover
+        text-decoration: none
+      #typed
+        display: inline-block
+        vertical-align: middle
+        + .typed-cursor
+          width: 4px
+          height: 42px
+          background: $main-color
+          display: inline-block
+          vertical-align: middle
+          margin-left: 7px
+          position: relative
+          z-index: 3
+
   .menu-block
     display: inline-block
     vertical-align: middle
@@ -209,24 +230,20 @@ body
 
       position: relative
       z-index: 2
-    #typed-strings
-      //display: none
+
     .block_text
       min-height: 230px
       width: 460px
       position: relative
       z-index: 2
 
-    #typed, #typed-strings
-
-      position: relative
       font-family: "BorgiaPro-Regular", sans-serif
       font-size: 48px
       font-weight: 400
       letter-spacing: -0.27px
       line-height: 1.2em
       color: #000
-      z-index: 2
+
 
       vertical-align: middle
       display: inline
@@ -715,7 +732,11 @@ body
       font-family: "BorgiaPro-Bold", sans-serif
       font-size: 18px
       line-height: 22px
-
+    form
+      >div
+        &.error
+          input[text="text"], textarea
+            border-color: red
 
   .modal_close
     background: url("../img/icons/close.svg") no-repeat
@@ -848,8 +869,7 @@ body
 @media screen and (max-width: 900px)
   .block_img .container .block_text
     min-height: 200px
-    #typed
-      font-size: 42px
+    font-size: 42px
 
   .block_services .item_service:nth-child(2n+1) .block_service
     left: -25px
@@ -888,6 +908,9 @@ body
 
       .bx-prev, .owl-prev
         left: 0
+
+
+
 
 
 
@@ -976,6 +999,12 @@ body
       width: 230px
       position: absolute
       left: 20px
+      height: 34px
+      a
+        font-size: 24px
+        #typed + .typed-cursor
+          height: 34px
+          width: 3px
 
 
 @media screen and (max-width: 700px)
@@ -993,11 +1022,12 @@ body
         margin-left: 12px
 
 
-  .block_img .container .block_text #typed
+  .block_img .container .block_text
     font-size: 28px
-    + .typed-cursor
+    i:after
       height: 32px
       width: 3px
+      margin-top: -16px
 
 
   .block_services .item_service
