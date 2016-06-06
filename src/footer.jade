@@ -44,10 +44,30 @@
                                 i.fa.fa-twitter
                                 | Twitter
 
+#overlay
+#form_feedback.modal_div
+    .modal_close
+    .success_box Thanks for the feedback
+    .content-holder
+
+        .overflow-holder
+
+            form
+                h3 Give feedback
+                div
+                    input(type="text" placeholder="First name" data-validate="name")
+
+
+                div
+                    textarea( placeholder="Your review" data-validate="empty")
+
+                a.button.submit(type="submit") Send
+
+
 
 script(src="bower_components/jquery/dist/jquery.js")
 script(src="js/functions.js")
 script(src="js/alexValidate.js")
-//script(src="js/owl.carousel.js")
+script(src="js/owl.carousel.js")
 script(src="js/typed.js")
-script(src="bower_components/jquery.bxslider/jquery.bxslider.js")
+//script(src="bower_components/jquery.bxslider/jquery.bxslider.js")

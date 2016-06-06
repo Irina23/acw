@@ -11,10 +11,10 @@
     <!--link(rel="icon" type="image/png" href="img/icons/favicon.png")-->
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/template.css" rel="stylesheet" type="text/css">
-    <!--link(href="css/owl.carousel.css" rel="stylesheet" type="text/css")-->
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="bower_components/animate.css/animate.css" rel="stylesheet" type="text/css">
-    <link href="bower_components/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <!--link(href="bower_components/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css")-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -50,9 +50,7 @@
           <div class="container">
             <h4>Hello</h4>
             <div class="block_text">
-              <div id="typed-strings">
-                <p>My name is&nbsp;<br>Anke Carola Walter&nbsp;<br>I am an independent&nbsp;<br><i>copywriter</i></p>
-              </div><span id="typed"></span>
+              <div id="typed-strings">My name is&nbsp;<br>Anke Carola Walter&nbsp;<br>I am an independent&nbsp;<br><i>copywriter</i></div><span id="typed"></span>
             </div>
           </div>
         </div>
@@ -151,22 +149,21 @@
             <div class="block_text">Here is my&nbsp;<i>clients</i></div>
             <div class="list_reviews">
               <div class="item_reviews">
-                <div class="img-holder"><img src="img/content/feedback.png"></div>
+                <div class="img-holder"><img src="img/content/logo_google.png"></div>
                 <div class="text_reviews">
                   <div class="text">« ACW exceeded all the expectation, she is actually listen to you and incorporate your knowladge. She seek to work with you to achieve the best outcomes... »</div>
-                  <div class="name">Lizabeth Durfel</div>
-                  <div class="post">Head of the building company</div>
+                  <div class="name">Lizabeth Durfel,&nbsp;<i class="post">Head of the building company</i></div>
                 </div>
               </div>
               <div class="item_reviews">
-                <div class="img-holder"><img src="img/content/feedback.png"></div>
+                <div class="img-holder"><img src="img/content/logo_google.png"></div>
                 <div class="text_reviews">
                   <div class="text">« ACW exceeded all the expectation, she is actually listen to you and incorporate your knowladge. She seek to work with you to achieve the best outcomes... »</div>
-                  <div class="name">Lizabeth Durfel</div>
-                  <div class="post">Head of the building company</div>
+                  <div class="name">Lizabeth Durfel,&nbsp;<i class="post">Head of the building company</i></div>
                 </div>
               </div>
             </div>
+            <div href="#form_feedback" class="feedback open-modal">GIVE FEEDBACK</div>
           </div>
         </div>
       </div>
@@ -196,7 +193,6 @@
                       i.fa.fa-twitter
                       | Twitter
                   
-                  
                   -->
                 </ul>
               </div>
@@ -204,12 +200,30 @@
           </div>
         </div>
       </div>
+      <div id="overlay"></div>
+      <div id="form_feedback" class="modal_div">
+        <div class="modal_close"></div>
+        <div class="success_box">Thanks for the feedback</div>
+        <div class="content-holder">
+          <div class="overflow-holder">
+            <form>
+              <h3>Give feedback</h3>
+              <div>
+                <input type="text" placeholder="First name" data-validate="name">
+              </div>
+              <div>
+                <textarea placeholder="Your review" data-validate="empty"></textarea>
+              </div><a type="submit" class="button submit">Send</a>
+            </form>
+          </div>
+        </div>
+      </div>
       <script src="bower_components/jquery/dist/jquery.js"></script>
       <script src="js/functions.js"></script>
       <script src="js/alexValidate.js"></script>
-      <!--script(src="js/owl.carousel.js")-->
+      <script src="js/owl.carousel.js"></script>
       <script src="js/typed.js"></script>
-      <script src="bower_components/jquery.bxslider/jquery.bxslider.js"></script>
+      <!--script(src="bower_components/jquery.bxslider/jquery.bxslider.js")-->
     </div>
   </body>
 </html>

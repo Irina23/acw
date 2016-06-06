@@ -13,11 +13,11 @@ jQuery(document).ready(function() {
 
 
         // Rewieves slider
-        /*$('.list_reviews').owlCarousel({
+        $('.list_reviews').owlCarousel({
             loop:true,
             nav:true,
-            autoplay:true,
-            autoplayTimeout: 7000,
+            //autoplay:true,
+            //autoplayTimeout: 7000,
             responsive:{
                 0:{
                     items:1
@@ -29,10 +29,10 @@ jQuery(document).ready(function() {
                     items:1
                 }
             }
-        })*/
+        });
 
 
-        jQuery('.list_reviews').bxSlider({
+        /*jQuery('.list_reviews').bxSlider({
             nextText: "",
             prevText: "",
             auto: true,
@@ -45,7 +45,7 @@ jQuery(document).ready(function() {
             }
 
 
-        });
+        });*/
         
     });
 
@@ -59,21 +59,56 @@ jQuery(document).ready(function() {
     });
 
     //print text
-    $(function () {
+    /*$(function () {
         $("#typed").typed({
-            //strings: ["My name is <br>Anke Carola Walter<br>I am an independent <br><i>copywriter</i>"],
-            //strings: [],
             stringsElement: $("#typed-strings"),
             typeSpeed: 70,
             cursorChar: ""
         });
-    });
+    });*/
 
     //mobile menu
     jQuery(".navbar-toggle").on("click", function(){
         jQuery(this).next().slideToggle();
-        //jQuery(this).toggleClass("active");
-        //jQuery(".mobile-navbar").toggleClass("active");
+
     });
+
+
+
+
+    //modal form
+    var overlay = $('#overlay');
+    var open_modal = $('.open-modal');
+    var close = $('.modal_close, #overlay');
+    var modal = $('.modal_div');
+   
+
+    open_modal.click( function(event){
+        event.preventDefault();
+        //console.log('open');
+        var div = $(this).attr('href');
+        overlay.fadeIn(400,
+            function(){
+                $(div)
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'}, 200);
+                $('body').addClass('no-scroll');
+                
+            });
+    });
+
+    close.click( function(){
+        //console.log('close');
+        modal
+            .animate({opacity: 0, top: '45%'}, 200,
+                function(){
+                    $(this).css('display', 'none');
+                    overlay.fadeOut(400);
+                    $(".success_box").removeClass('show');
+                    $('body').removeClass('no-scroll');
+                }
+            );
+    });
+    
 
 });
