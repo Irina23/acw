@@ -58,7 +58,11 @@ $main-color: #00d89f
   src: url("../fonts/Museo700-Regular-webfont.eot?#iefix")format("embedded-opentype"), url("../fonts/Museo700-Regular-webfont.svg") format("svg"),url("../fonts/Museo700-Regular-webfont.woff") format("woff"),url("../fonts/Museo700-Regular-webfont.ttf") format("truetype"), url("../fonts/Museo700-Regular-webfont.woff2") format("woff2")
   font-style: normal
   font-weight: normal
-
+@font-face
+  font-family: "NotoSans-Regular"
+  src: url("../fonts/NotoSans-Regular.woff") format("woff"), url("../fonts/NotoSans-Regular.ttf") format("truetype"), url("../fonts/NotoSans-Regular.woff2") format("woff2")
+  font-style: normal
+  font-weight: normal
 
 body
   font-family: "BorgiaPro-Regular", Arial, sans-serif
@@ -1126,6 +1130,88 @@ body
           margin-bottom: 30px
           &:last-child
             margin-bottom: 0
+
+
+
+
+
+  &.article
+    .content
+      padding: 163px 0 70px
+      .block_article
+        width: 700px
+        margin-left: 80px
+      h1
+
+        line-height: 1.2em
+        color: #000
+        font-size: 38px
+        font-weight: normal
+        margin-bottom: 20px
+      h2
+
+        line-height: 1.2em
+        color: #000
+        font-size: 24px
+        font-weight: normal
+        margin-bottom: 20px
+        font-family: "AvenirNextW1G-Demi", sans-serif
+      h3
+
+        line-height: 1.2em
+        color: #000
+        font-size: 18px
+        font-weight: normal
+        margin-bottom: 20px
+        font-family: "AvenirNextW1G-Demi", sans-serif
+
+
+      .data
+        margin-bottom: 25px
+        color: #9299a6
+        font-size: 16px
+        line-height: 1em
+        font-family: "NotoSans-Regular", "BorgiaPro-Regular", sans-serif
+
+      .img-holder
+        width: 100%
+        margin-bottom: 20px
+
+      p
+        margin-bottom: 30px
+        color: #7b7b7b
+        font-size: 16px
+        line-height: 1.3em
+        &:last-child
+          margin-bottom: 0
+
+      ul, ol
+        margin-bottom: 30px
+        &:last-child
+          margin-bottom: 0
+        li
+          color: #7b7b7b
+          font-size: 16px
+          line-height: 1.3em
+
+
+      ol
+        li
+          list-style: decimal
+          margin-left: 20px
+      ul
+        li
+          padding-left: 20px
+          position: relative
+          &:before
+            content: ""
+            position: absolute
+            left: 0
+            top: 7px
+            width: 6px
+            height: 6px
+            border-radius: 6px
+            background: $main-color
 
 
 

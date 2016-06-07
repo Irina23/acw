@@ -55,6 +55,12 @@
   font-style: normal;
   font-weight: normal; }
 
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("../fonts/NotoSans-Regular.woff") format("woff"), url("../fonts/NotoSans-Regular.ttf") format("truetype"), url("../fonts/NotoSans-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal; }
+
 body {
   font-family: "BorgiaPro-Regular", Arial, sans-serif;
   padding: 0;
@@ -962,6 +968,71 @@ body {
     margin-bottom: 30px; }
     .page_wrapper.service .list_desc .item p:last-child {
       margin-bottom: 0; }
+
+.page_wrapper.article .content {
+  padding: 163px 0 70px; }
+  .page_wrapper.article .content .block_article {
+    width: 700px;
+    margin-left: 80px; }
+  .page_wrapper.article .content h1 {
+    line-height: 1.2em;
+    color: #000;
+    font-size: 38px;
+    font-weight: normal;
+    margin-bottom: 20px; }
+  .page_wrapper.article .content h2 {
+    line-height: 1.2em;
+    color: #000;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-family: "AvenirNextW1G-Demi", sans-serif; }
+  .page_wrapper.article .content h3 {
+    line-height: 1.2em;
+    color: #000;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-family: "AvenirNextW1G-Demi", sans-serif; }
+  .page_wrapper.article .content .data {
+    margin-bottom: 25px;
+    color: #9299a6;
+    font-size: 16px;
+    line-height: 1em;
+    font-family: "NotoSans-Regular", "BorgiaPro-Regular", sans-serif; }
+  .page_wrapper.article .content .img-holder {
+    width: 100%;
+    margin-bottom: 20px; }
+  .page_wrapper.article .content p {
+    margin-bottom: 30px;
+    color: #7b7b7b;
+    font-size: 16px;
+    line-height: 1.3em; }
+    .page_wrapper.article .content p:last-child {
+      margin-bottom: 0; }
+  .page_wrapper.article .content ul, .page_wrapper.article .content ol {
+    margin-bottom: 30px; }
+    .page_wrapper.article .content ul:last-child, .page_wrapper.article .content ol:last-child {
+      margin-bottom: 0; }
+    .page_wrapper.article .content ul li, .page_wrapper.article .content ol li {
+      color: #7b7b7b;
+      font-size: 16px;
+      line-height: 1.3em; }
+  .page_wrapper.article .content ol li {
+    list-style: decimal;
+    margin-left: 20px; }
+  .page_wrapper.article .content ul li {
+    padding-left: 20px;
+    position: relative; }
+    .page_wrapper.article .content ul li:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 6px;
+      height: 6px;
+      border-radius: 6px;
+      background: #00d89f; }
 
 @media screen and (max-width: 1023px) {
   .block_img .container:after {
