@@ -162,6 +162,7 @@ body
     vertical-align: middle
     float: right
     margin-top: 15px
+    margin-left: 30px
     li
       display: inline-block
       vertical-align: middle
@@ -185,13 +186,14 @@ body
   .menu-block
     display: inline-block
     vertical-align: middle
-    margin-right: 30px
+
     float: right
     margin-top: 15px
     .navbar-toggle
       cursor: pointer
       margin: 10px 0
       float: right
+
       .icon-bar
         background-color: #000
         display: block
@@ -209,7 +211,11 @@ body
       display: inline-block
       vertical-align: middle
       margin: 0 10px
-
+      &:last-child
+        margin-right: 0
+      &.active
+        a
+          color: $main-color
       a
         text-transform: uppercase
         font-family: "AvenirNextW1G-Demi", sans-serif
@@ -497,19 +503,7 @@ body
 .block_advantages
   padding: 80px 0 70px
   background-color: #f5f5f6
-  //&:hover
-    .list_advantages
-      .item_advantage
-        .number
-          //opacity: 1
-          visibility: visible
-          animation-delay: 0.3s
-          animation-name: fadeIn
-        .block_advantage
-          //opacity: 1
-          visibility: visible
-          animation-delay: 0.5s
-          animation-name: fadeIn
+
 
 
   .block_text
@@ -1066,6 +1060,75 @@ body
 
 
 
+
+
+  &.service
+
+    .content
+      padding: 125px 0 70px
+      position: relative
+      z-index: 1
+
+
+      &:after
+        background-image: linear-gradient(180deg, transparent 0%, white 100%), linear-gradient(to top, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.62) 30%, rgba(255, 255, 255, 0.88) 63%, white 100%)
+        position: absolute
+        top: 73px
+        left: 0
+        width: 100%
+        height: calc(100% - 73px)
+        z-index: 2
+        content: ""
+      .container
+        position: relative
+        z-index: 3
+
+    h1
+      text-align: center
+      line-height: 1em
+      color: #000
+      font-size: 48px
+      font-weight: normal
+      margin-bottom: 45px
+    .desc
+      padding: 0 130px
+      margin-bottom: 90px
+
+      p
+        color: #000
+        font-size: 16px
+        line-height: 1.5em
+        margin-bottom: 30px
+        &:last-child
+          margin-bottom: 0
+
+    .list_desc
+      .item
+        margin: 0 60px 45px 0
+        width: 270px
+        float: left
+        &:nth-child(3n)
+          margin-right: 0
+        h3
+
+          color: #000
+          font-family: "AvenirNextW1G-Demi", sans-serif
+          font-size: 18px
+          letter-spacing: 0.75px
+          line-height: 1em
+          margin-bottom: 20px
+
+
+        p
+          color: #000
+          font-size: 16px
+          line-height: 1.5em
+          margin-bottom: 30px
+          &:last-child
+            margin-bottom: 0
+
+
+
 @media screen and (max-width: 1023px)
   .block_img .container:after
     right: 0
@@ -1148,6 +1211,19 @@ body
           .mask .img-holder
               //width: 100%
               height: 100%
+
+
+  .page_wrapper.service .container
+    padding: 0 20px
+    .list_desc
+      text-align: center
+      .item
+        text-align: left
+        float: none
+        display: inline-block
+        vertical-align: top
+        margin: 0 10px 20px
+
 
 
 
@@ -1275,6 +1351,8 @@ body
           text-align: center
           float: none
           display: block
+          margin: auto
+          margin-top: 15px
           li
             a
               text-transform: none
@@ -1300,6 +1378,9 @@ body
           height: 34px
           width: 3px
 
+  .page_wrapper.service .content:after
+    top: 67px
+    height: calc(100% - 67px)
 
 @media screen and (max-width: 700px)
   [class^="block_"] .block_text
@@ -1378,7 +1459,13 @@ body
         a i
           font-size: 18px
 
-
+  .page_wrapper.service
+    h1
+      font-size: 28px
+      margin-bottom: 30px
+    .desc
+      padding: 0
+      margin-bottom: 50px
 
 @media screen and (max-width: 600px)
   .block_contacts
@@ -1420,6 +1507,16 @@ body
   .block_reviews .block_text
     margin-bottom: 40px
 
+
+  .page_wrapper.service .container
+
+    .list_desc
+
+      .item
+
+        display: block
+        margin: 0 0 20px
+        width: 100%
 
 
 @media screen and (max-width: 500px)
