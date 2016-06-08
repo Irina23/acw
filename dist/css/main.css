@@ -76,6 +76,9 @@ body {
 * {
   box-sizing: border-box; }
 
+.content {
+  min-height: calc(100% - 74px); }
+
 .container {
   width: 940px;
   margin: auto; }
@@ -1074,6 +1077,81 @@ body {
         height: 6px;
         border-radius: 6px;
         background: #00d89f; }
+
+.page_wrapper.impressum .content {
+  padding: 125px 0 150px; }
+  .page_wrapper.impressum .content h1 {
+    line-height: 1em;
+    color: #000;
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 40px; }
+
+.page_wrapper.impressum .row3 {
+  clear: both;
+  margin-bottom: 150px; }
+  .page_wrapper.impressum .row3 > div {
+    width: calc((100% - 60px)/3);
+    margin-right: 30px;
+    float: left; }
+    .page_wrapper.impressum .row3 > div:first-child {
+      margin-top: 30px; }
+    .page_wrapper.impressum .row3 > div:last-child {
+      margin-right: 0; }
+    .page_wrapper.impressum .row3 > div h3 {
+      color: #000;
+      font-family: "AvenirNextW1G-Demi", sans-serif;
+      font-size: 18px;
+      letter-spacing: 0.75px;
+      line-height: 1.3em;
+      margin-bottom: 20px; }
+    .page_wrapper.impressum .row3 > div p {
+      color: #000;
+      font-size: 16px;
+      line-height: 2em; }
+      .page_wrapper.impressum .row3 > div p a {
+        color: #000;
+        font-size: 16px;
+        line-height: 2em;
+        text-decoration: underline;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
+        .page_wrapper.impressum .row3 > div p a:hover {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          color: #00d89f; }
+
+.page_wrapper.impressum .row2 {
+  clear: both; }
+  .page_wrapper.impressum .row2 > div {
+    width: 260px;
+    float: left; }
+    .page_wrapper.impressum .row2 > div:first-child {
+      margin-right: 60px; }
+    .page_wrapper.impressum .row2 > div:last-child {
+      width: 620px; }
+    .page_wrapper.impressum .row2 > div h3 {
+      color: #000;
+      font-family: "AvenirNextW1G-Demi", sans-serif;
+      font-size: 18px;
+      letter-spacing: 0.75px;
+      line-height: 1.3em;
+      margin-bottom: 20px; }
+    .page_wrapper.impressum .row2 > div p {
+      color: #000;
+      font-size: 16px;
+      line-height: 2em; }
+      .page_wrapper.impressum .row2 > div p a {
+        color: #000;
+        font-size: 16px;
+        line-height: 2em;
+        text-decoration: underline;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
+        .page_wrapper.impressum .row2 > div p a:hover {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          color: #00d89f; }
 
 @media screen and (max-width: 1023px) {
   .block_img .container:after {

@@ -82,7 +82,8 @@ body
 *
   box-sizing: border-box
 
-
+.content
+  min-height: calc(100% - 74px)
 
 .container
   width: 940px
@@ -1272,6 +1273,87 @@ body
               background: $main-color
 
 
+  &.impressum
+    .content
+      padding: 125px 0 150px
+      h1
+
+        line-height: 1em
+        color: #000
+        font-size: 48px
+        font-weight: normal
+        margin-bottom: 40px
+    .row3
+      clear: both
+      margin-bottom: 150px
+
+      >div
+        width: calc((100% - 60px)/3)
+        margin-right: 30px
+        float: left
+        &:first-child
+          margin-top: 30px
+        &:last-child
+          margin-right: 0
+
+        h3
+
+          color: #000
+          font-family: "AvenirNextW1G-Demi", sans-serif
+          font-size: 18px
+          letter-spacing: 0.75px
+          line-height: 1.3em
+          margin-bottom: 20px
+        p
+          color: #000
+          font-size: 16px
+          line-height: 2em
+          a
+            color: #000
+            font-size: 16px
+            line-height: 2em
+            text-decoration: underline
+            transition: all 0.35s
+            &:hover
+              transition: all 0.35s
+              color: $main-color
+
+
+    .row2
+      clear: both
+
+
+      >div
+        width: 260px
+        float: left
+        &:first-child
+          margin-right: 60px
+
+        &:last-child
+
+          width: 620px
+
+        h3
+
+          color: #000
+          font-family: "AvenirNextW1G-Demi", sans-serif
+          font-size: 18px
+          letter-spacing: 0.75px
+          line-height: 1.3em
+          margin-bottom: 20px
+        p
+          color: #000
+          font-size: 16px
+          line-height: 2em
+          a
+            color: #000
+            font-size: 16px
+            line-height: 2em
+            text-decoration: underline
+            transition: all 0.35s
+            &:hover
+              transition: all 0.35s
+              color: $main-color
 
 
 
@@ -1397,6 +1479,7 @@ body
       //width: 100%
       //padding: 0 20px
       margin: auto
+
 
 
 @media screen and (max-width: 900px)
