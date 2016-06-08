@@ -48,7 +48,7 @@ jQuery(document).ready(function() {
         });*/
 
         
-        $('.share').socialSharePrivacy();
+       
     });
 
 
