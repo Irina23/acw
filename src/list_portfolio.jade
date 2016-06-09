@@ -1,0 +1,103 @@
+doctype html
+html(lang="ru")
+    include ./head.jade
+
+
+    body
+        .page_wrapper.list_portfolio
+
+            include ./header.jade
+            .content
+                .container.cf
+                    h1 Portfolio
+                    .filter
+                        .name Chose services:
+                         ul.list_filter
+                             li.active(data-cat="all") ALL
+                             li(data-cat="text_writting") TEXT WRITTING
+                             li(data-cat="pr") PR CONSULTATION
+                             li(data-cat="correction") CORRECTION
+                             li(data-cat="smm") SMM
+
+
+                    .list_portfolios
+                        .item-portfolio(data-cat="text_writting")
+                            .img-holder
+                                img(src="img/content/portfolio1.jpg")
+                            .category TEXT WRITING
+                            a.name(href="portfolio.html") Imagebroschüre Steuerberater
+
+                        .item-portfolio(data-cat="smm")
+                            .img-holder
+                                img(src="img/content/portfolio2.jpg")
+                            .category SMM
+                            a.name(href="portfolio.html") Pressetext Interprint
+
+                        .item-portfolio(data-cat="correction")
+                            .img-holder
+                                img(src="img/content/portfolio3.jpg")
+                            .category CORRECTION
+                            a.name(href="portfolio.html") PR-Text intersoft consulting
+
+                        .item-portfolio(data-cat="pr")
+                            .img-holder
+                                img(src="img/content/portfolio4.png")
+                            .category PR CONSULTATION
+                            a.name(href="portfolio.html") Leitbild Centershop
+
+                        .item-portfolio(data-cat="smm")
+                            .img-holder
+                                img(src="img/content/portfolio5.png")
+                            .category SMM
+                            a.name(href="portfolio.html") Web Business Englisch
+
+                        .item-portfolio(data-cat="correction")
+                            .img-holder
+                                img(src="img/content/portfolio6.png")
+                            .category CORRECTION
+                            a.name(href="portfolio.html") Produktbroschüre Theraline
+
+                        .item-portfolio(data-cat="pr")
+                            .img-holder
+                                img(src="img/content/portfolio7.jpg")
+                            .category PR CONSULTATION
+                            a.name(href="portfolio.html") Firmenbroschüre Hochzeit
+
+                        .item-portfolio(data-cat="smm")
+                            .img-holder
+                                img(src="img/content/portfolio8.png")
+                            .category SMM
+                            a.name(href="portfolio.html") Pressetext Interprint
+
+                        .item-portfolio(data-cat="correction")
+                            .img-holder
+                                img(src="img/content/portfolio9.jpg")
+                            .category CORRECTION
+                            a.name(href="portfolio.html") PR-Text intersoft consulting
+
+                        .item-portfolio(data-cat="text_writting")
+                            .img-holder
+                                img(src="img/content/portfolio10.jpg")
+                            .category TEXT WRITING
+                            a.name(href="portfolio.html") Imagebroschüre Steuerberater
+
+
+                        .item-portfolio(data-cat="smm")
+                            .img-holder
+                                img(src="img/content/portfolio11.jpg")
+                            .category SMM
+                            a.name(href="portfolio.html") Pressetext Interprint
+
+                        .item-portfolio(data-cat="correction")
+                            .img-holder
+                                img(src="img/content/portfolio12.jpg")
+                            .category CORRECTION
+                            a.name(href="portfolio.html") PR-Text intersoft consulting
+
+
+
+
+            include ./footer2.jade
+
+
+

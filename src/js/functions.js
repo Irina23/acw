@@ -150,6 +150,30 @@ jQuery(document).ready(function() {
             }
         }
     });
-    
+
+
+    //filter portfolio
+    jQuery(".list_filter li").click(function(){
+        var nav_active = jQuery(this);
+        console.log(nav_active);
+        jQuery('.list_filter li').each(function(){
+            jQuery(this).removeClass("active");
+        });
+        jQuery(nav_active).addClass("active");
+
+
+        var customType = jQuery(this).attr('data-cat');
+        console.log(customType);
+        if(customType==="all") {
+            jQuery('.item-portfolio').show();
+            return;
+        }else{
+            jQuery('.item-portfolio').each(function(){
+                if(jQuery(this).attr('data-cat').indexOf(customType) < 0) jQuery(this).hide(); else jQuery(this).show();
+            });
+        }
+
+
+    });
 
 });
