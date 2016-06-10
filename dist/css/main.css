@@ -1325,6 +1325,93 @@ body {
         color: #00d89f;
         text-decoration: none; }
 
+.page_wrapper.blog .content {
+  padding: 125px 0 70px; }
+
+.page_wrapper.blog h1 {
+  color: #000;
+  font-size: 38px;
+  font-weight: normal;
+  line-height: 1em;
+  margin-bottom: 15px; }
+
+.page_wrapper.blog .desc_blog {
+  width: 480px;
+  color: #7b7b7b;
+  font-size: 16px;
+  line-height: 1.3em;
+  margin-bottom: 40px; }
+
+.page_wrapper.blog #loading {
+  text-align: center; }
+  .page_wrapper.blog #loading span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 30px;
+    line-height: 20px;
+    color: #1c1c1c;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 14px;
+    position: relative; }
+    .page_wrapper.blog #loading span:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background: url("../img/icons/loading.gif") no-repeat;
+      background-size: 100%; }
+
+.page_wrapper.blog .list_article {
+  margin: 0 -10px 45px; }
+  .page_wrapper.blog .list_article .item-article {
+    width: 300px;
+    height: 370px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0 8px 15px;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    .page_wrapper.blog .list_article .item-article .img-holder {
+      height: 140px;
+      margin-bottom: 15px; }
+    .page_wrapper.blog .list_article .item-article .data {
+      margin-bottom: 15px;
+      color: #9b9b9b;
+      font-family: "NotoSans-Regular", sans-serif;
+      font-size: 13px;
+      line-height: 1em; }
+    .page_wrapper.blog .list_article .item-article .short_desc {
+      color: #9299a6;
+      font-family: "NotoSans-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      height: 100px;
+      overflow: hidden; }
+    .page_wrapper.blog .list_article .item-article .name {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      color: #1c1c1c;
+      font-family: "NotoSans-Regular", sans-serif;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 25px;
+      max-height: 53px;
+      overflow: hidden;
+      display: block;
+      margin-bottom: 10px; }
+      .page_wrapper.blog .list_article .item-article .name:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        color: #00d89f;
+        text-decoration: none; }
+
 @media screen and (max-width: 1023px) {
   .block_img .container:after {
     right: 0; } }
@@ -1429,7 +1516,15 @@ body {
   .page_wrapper.list_portfolio .filter .name {
     margin-right: 15px; }
   .page_wrapper.list_portfolio .filter .list_filter li {
-    margin: 0 15px; } }
+    margin: 0 15px; }
+  .page_wrapper.blog .container {
+    width: 750px;
+    margin: auto; }
+  .page_wrapper.blog .list_article {
+    text-align: center;
+    margin: 0 0 50px; }
+    .page_wrapper.blog .list_article .item-article {
+      text-align: left; } }
 
 @media screen and (max-width: 900px) {
   .block_services .item_service:nth-child(2n+1) .block_service {
@@ -1604,7 +1699,11 @@ body {
   .page_wrapper.list_portfolio .list_portfolios .item-portfolio {
     width: 280px; }
   .page_wrapper.list_portfolio .filter .list_filter {
-    text-align: center; } }
+    text-align: center; }
+  .page_wrapper.blog .container, .page_wrapper.blog .desc_blog {
+    width: 100%; }
+  .page_wrapper.blog .list_article .item-article {
+    width: 280px; } }
 
 @media screen and (max-width: 700px) {
   [class^="block_"] .block_text {
@@ -1671,10 +1770,13 @@ body {
     margin-bottom: 30px; }
   .page_wrapper.service .desc {
     padding: 0;
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .page_wrapper.blog h1 {
+    font-size: 28px; } }
 
 @media screen and (max-width: 635px) {
-  .page_wrapper.list_portfolio .list_portfolios .item-portfolio {
+  .page_wrapper.list_portfolio .list_portfolios .item-portfolio,
+  .page_wrapper.blog .list_article .item-article {
     margin: 0 0 20px; } }
 
 @media screen and (max-width: 600px) {
