@@ -1834,3 +1834,9 @@ body {
   .footer .social {
     clear: right;
     margin-top: 0; } }
+
+body.client-safari .block_contacts .block_footer, body.client-ios .block_contacts .block_footer {
+  background: none !important; }
+
+body.client-safari .page_wrapper.service .content:after, body.client-ios .page_wrapper.service .content:after {
+  background: rgba(255, 255, 255, 0.8); }
