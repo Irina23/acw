@@ -1458,9 +1458,59 @@ body
       line-height: 1em
       margin-bottom: 35px
     .filter
+      margin-bottom: 45px
+      .name
+        display: inline-block
+        vertical-align: middle
+        margin-right: 25px
+      .list_filter
+        display: inline-block
+        vertical-align: middle
+        li
+          display: inline-block
+          vertical-align: middle
+          text-transform: uppercase
+          color: #9b9b9b
+          font-family: "AvenirNextW1G-Demi", sans-serif
+          font-size: 12px
+          line-height: 1em
+          letter-spacing: 0.8px
+          margin: 0 25px
+          transition: all 0.35s
+          cursor: pointer
+          &.active, &:hover
+            color: $main-color
+            transition: all 0.35s
+            text-decoration: none
+
+    #loading
+
+      text-align: center
+      span
+        display: inline-block
+        vertical-align: middle
+        padding-left: 30px
+        line-height: 20px
+        color: #1c1c1c
+        font-family: "NotoSans-Regular", sans-serif
+        font-size: 14px
+        position: relative
+        &:before
+          content: ""
+          position: absolute
+          top: 0
+          left: 0
+          width: 20px
+          height: 20px
+          background: url("../img/icons/loading.gif") no-repeat
+          background-size: 100%
+
+
+
 
     .list_portfolios
-      margin: 0 -10px
+      margin: 0 -10px 50px
+
       .item-portfolio
         width: 300px
         height: 300px
@@ -1471,6 +1521,7 @@ body
         padding: 15px
         box-sizing: border-box
         margin: 0 8px 20px
+        transition: all 0.35s
         .img-holder
           height: 170px
           margin-bottom: 20px
@@ -1634,6 +1685,25 @@ body
     .container
       width: 750px
 
+
+
+  .page_wrapper.list_portfolio
+    .container
+      width: 750px
+      margin: auto
+    .list_portfolios
+      text-align: center
+      margin: 0 0 50px
+      .item-portfolio
+        text-align: left
+
+    .filter
+      .name
+        margin-right: 15px
+      .list_filter
+
+        li
+          margin: 0 15px
 
 
 
@@ -1855,6 +1925,26 @@ body
         a i
           font-size: 18px
 
+
+
+  .page_wrapper.list_portfolio
+    .container
+      width: 100%
+
+    .list_portfolios
+
+      .item-portfolio
+        width: 280px
+
+    .filter
+
+      .list_filter
+        text-align: center
+
+
+
+
+
 @media screen and (max-width: 700px)
   [class^="block_"] .block_text
     font-size: 28px
@@ -1922,6 +2012,20 @@ body
     font-size: 28px
 
 
+  .page_wrapper.list_portfolio
+    h1
+      font-size: 28px
+    .filter
+      margin-bottom: 10px
+      .name
+        margin-bottom: 20px
+        display: block
+        margin-right: 0
+      .list_filter
+        display: block
+        li
+          text-align: center
+          margin: 0 10px 20px
 
   .page_wrapper.service
     h1
@@ -1930,6 +2034,13 @@ body
     .desc
       padding: 0
       margin-bottom: 50px
+
+
+
+@media screen and (max-width: 635px)
+  .page_wrapper.list_portfolio .list_portfolios .item-portfolio
+    margin: 0 0 20px
+
 
 @media screen and (max-width: 600px)
   .block_contacts

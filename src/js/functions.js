@@ -155,7 +155,7 @@ jQuery(document).ready(function() {
     //filter portfolio
     jQuery(".list_filter li").click(function(){
         var nav_active = jQuery(this);
-        console.log(nav_active);
+        //console.log(nav_active);
         jQuery('.list_filter li').each(function(){
             jQuery(this).removeClass("active");
         });
@@ -163,10 +163,9 @@ jQuery(document).ready(function() {
 
 
         var customType = jQuery(this).attr('data-cat');
-        console.log(customType);
+        //console.log(customType);
         if(customType==="all") {
             jQuery('.item-portfolio').show();
-            return;
         }else{
             jQuery('.item-portfolio').each(function(){
                 if(jQuery(this).attr('data-cat').indexOf(customType) < 0) jQuery(this).hide(); else jQuery(this).show();
@@ -176,4 +175,21 @@ jQuery(document).ready(function() {
 
     });
 
+
+    //loading list portfolio
+    $(window).scroll(function() {
+
+        /*if ($(document).height() - $(window).height() == $(window).scrollTop()) {
+            $('#loading').show();
+
+            $.ajax({
+                url: '',
+                dataType: 'html',
+                success: function(html) {
+                    $('.list_portfolios').append(html);
+                    $('#loading').hide();
+                }
+            });
+        }*/
+    });
 });

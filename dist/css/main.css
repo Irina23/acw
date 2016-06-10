@@ -1235,8 +1235,57 @@ body {
   line-height: 1em;
   margin-bottom: 35px; }
 
+.page_wrapper.list_portfolio .filter {
+  margin-bottom: 45px; }
+  .page_wrapper.list_portfolio .filter .name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px; }
+  .page_wrapper.list_portfolio .filter .list_filter {
+    display: inline-block;
+    vertical-align: middle; }
+    .page_wrapper.list_portfolio .filter .list_filter li {
+      display: inline-block;
+      vertical-align: middle;
+      text-transform: uppercase;
+      color: #9b9b9b;
+      font-family: "AvenirNextW1G-Demi", sans-serif;
+      font-size: 12px;
+      line-height: 1em;
+      letter-spacing: 0.8px;
+      margin: 0 25px;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      cursor: pointer; }
+      .page_wrapper.list_portfolio .filter .list_filter li.active, .page_wrapper.list_portfolio .filter .list_filter li:hover {
+        color: #00d89f;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        text-decoration: none; }
+
+.page_wrapper.list_portfolio #loading {
+  text-align: center; }
+  .page_wrapper.list_portfolio #loading span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 30px;
+    line-height: 20px;
+    color: #1c1c1c;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 14px;
+    position: relative; }
+    .page_wrapper.list_portfolio #loading span:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background: url("../img/icons/loading.gif") no-repeat;
+      background-size: 100%; }
+
 .page_wrapper.list_portfolio .list_portfolios {
-  margin: 0 -10px; }
+  margin: 0 -10px 50px; }
   .page_wrapper.list_portfolio .list_portfolios .item-portfolio {
     width: 300px;
     height: 300px;
@@ -1246,7 +1295,9 @@ body {
     vertical-align: top;
     padding: 15px;
     box-sizing: border-box;
-    margin: 0 8px 20px; }
+    margin: 0 8px 20px;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
     .page_wrapper.list_portfolio .list_portfolios .item-portfolio .img-holder {
       height: 170px;
       margin-bottom: 20px; }
@@ -1366,7 +1417,19 @@ body {
   .page_wrapper.impressum .row2 > div:last-child {
     width: 460px; }
   .page_wrapper.impressum .container {
-    width: 750px; } }
+    width: 750px; }
+  .page_wrapper.list_portfolio .container {
+    width: 750px;
+    margin: auto; }
+  .page_wrapper.list_portfolio .list_portfolios {
+    text-align: center;
+    margin: 0 0 50px; }
+    .page_wrapper.list_portfolio .list_portfolios .item-portfolio {
+      text-align: left; }
+  .page_wrapper.list_portfolio .filter .name {
+    margin-right: 15px; }
+  .page_wrapper.list_portfolio .filter .list_filter li {
+    margin: 0 15px; } }
 
 @media screen and (max-width: 900px) {
   .block_services .item_service:nth-child(2n+1) .block_service {
@@ -1535,7 +1598,13 @@ body {
     .footer .social li {
       margin-right: 7px; }
       .footer .social li a i {
-        font-size: 18px; } }
+        font-size: 18px; }
+  .page_wrapper.list_portfolio .container {
+    width: 100%; }
+  .page_wrapper.list_portfolio .list_portfolios .item-portfolio {
+    width: 280px; }
+  .page_wrapper.list_portfolio .filter .list_filter {
+    text-align: center; } }
 
 @media screen and (max-width: 700px) {
   [class^="block_"] .block_text {
@@ -1584,12 +1653,29 @@ body {
     font-size: 18px; }
   .page_wrapper.services .content h1 {
     font-size: 28px; }
+  .page_wrapper.list_portfolio h1 {
+    font-size: 28px; }
+  .page_wrapper.list_portfolio .filter {
+    margin-bottom: 10px; }
+    .page_wrapper.list_portfolio .filter .name {
+      margin-bottom: 20px;
+      display: block;
+      margin-right: 0; }
+    .page_wrapper.list_portfolio .filter .list_filter {
+      display: block; }
+      .page_wrapper.list_portfolio .filter .list_filter li {
+        text-align: center;
+        margin: 0 10px 20px; }
   .page_wrapper.service h1 {
     font-size: 28px;
     margin-bottom: 30px; }
   .page_wrapper.service .desc {
     padding: 0;
     margin-bottom: 50px; } }
+
+@media screen and (max-width: 635px) {
+  .page_wrapper.list_portfolio .list_portfolios .item-portfolio {
+    margin: 0 0 20px; } }
 
 @media screen and (max-width: 600px) {
   .block_contacts .block_footer {
