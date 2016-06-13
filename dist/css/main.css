@@ -155,7 +155,7 @@ body {
     vertical-align: middle;
     float: right;
     margin-top: 15px;
-    margin-left: 30px; }
+    margin-left: 108px; }
     #header .lang-block li {
       display: inline-block;
       vertical-align: middle;
@@ -1524,7 +1524,9 @@ body {
     text-align: center;
     margin: 0 0 50px; }
     .page_wrapper.blog .list_article .item-article {
-      text-align: left; } }
+      text-align: left; }
+  #header .lang-block {
+    margin-left: 40px; } }
 
 @media screen and (max-width: 900px) {
   .block_services .item_service:nth-child(2n+1) .block_service {
