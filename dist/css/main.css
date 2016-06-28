@@ -130,7 +130,8 @@ body {
   #header .logo {
     display: inline-block;
     vertical-align: middle;
-    height: 42px; }
+    height: 42px;
+    float: left; }
     #header .logo a {
       color: #2d2e2b;
       line-height: 1em;
@@ -1627,10 +1628,19 @@ body {
         display: block;
         margin: auto;
         margin-top: 15px; }
+        #header .menu-block.mobile .lang-block li.active a {
+          color: #7b7b7b; }
         #header .menu-block.mobile .lang-block li a {
           text-transform: none;
           font-family: "BorgiaPro-Regular", Arial, sans-serif;
-          font-size: 16px; }
+          font-size: 16px;
+          color: #000;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s; }
+          #header .menu-block.mobile .lang-block li a:hover {
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            color: #00d89f; }
       #header .menu-block.mobile .nav {
         display: block;
         width: 100%;

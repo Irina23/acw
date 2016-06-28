@@ -141,6 +141,7 @@ body
     display: inline-block
     vertical-align: middle
     height: 42px
+    float: left
     a
       color: #2d2e2b
       line-height: 1em
@@ -1948,10 +1949,20 @@ body
           margin: auto
           margin-top: 15px
           li
+            &.active
+              a
+                color: #7b7b7b
             a
               text-transform: none
               font-family: "BorgiaPro-Regular", Arial, sans-serif
               font-size: 16px
+              color: #000
+              transition: all 0.35s
+              &:hover
+                transition: all 0.35s
+                color: $main-color
+
+
         .nav
           display: block
           width: 100%
