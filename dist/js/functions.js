@@ -183,7 +183,7 @@ jQuery(document).ready(function() {
             jQuery('.item-portfolio').show();
         }else{
             jQuery('.item-portfolio').each(function(){
-                if(jQuery(this).attr('data-cat').indexOf(customType) < 0) jQuery(this).hide(); else jQuery(this).show();
+                if(customType === jQuery(this).attr('data-cat')) jQuery(this).show(); else jQuery(this).hide();
             });
         }
 
