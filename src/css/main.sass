@@ -1372,7 +1372,7 @@ body
 
   &.impressum
     .content
-      padding: 125px 0 150px
+      padding: 125px 0 0
       h1
 
         line-height: 1em
@@ -1380,82 +1380,47 @@ body
         font-size: 48px
         font-weight: normal
         margin-bottom: 40px
-    .row3
-      clear: both
-      margin-bottom: 150px
+      .list_impressum
+        .item
+          display: inline-block
+          vertical-align: middle
+          width: calc((100% - 60px)/3)
+          margin-right: 30px
+          margin-bottom: 150px
+          float: left
+          &:first-child
+            margin-top: 30px
+          &:nth-child(3n), &.long_div
+            margin-right: 0
+          &.long_div
+            width: 615px
 
-      >div
-        width: calc((100% - 60px)/3)
-        margin-right: 30px
-        float: left
-        &:first-child
-          margin-top: 30px
-        &:last-child
-          margin-right: 0
+          h3
 
-        h3
-
-          color: #000
-          font-family: "AvenirNextW1G-Demi", sans-serif
-          font-size: 18px
-          letter-spacing: 0.75px
-          line-height: 1.3em
-          margin-bottom: 20px
-        p
-          color: #000
-          font-size: 16px
-          line-height: 2em
-          a
+            color: #000
+            font-family: "AvenirNextW1G-Demi", sans-serif
+            font-size: 18px
+            letter-spacing: 0.75px
+            line-height: 1.3em
+            margin-bottom: 20px
+          p
             color: #000
             font-size: 16px
             line-height: 2em
-            text-decoration: underline
-            transition: all 0.35s
-
-            &:hover
+            a
+              color: #000
+              font-size: 16px
+              line-height: 2em
+              text-decoration: underline
               transition: all 0.35s
-              color: $main-color
+              overflow: hidden
+              text-overflow: ellipsis
+              max-width: 100%
+              display: block
 
-
-    .row2
-      clear: both
-
-
-      >div
-        width: 260px
-        float: left
-        &:first-child
-          margin-right: 60px
-
-        &:last-child
-
-          width: 620px
-
-        h3
-
-          color: #000
-          font-family: "AvenirNextW1G-Demi", sans-serif
-          font-size: 18px
-          letter-spacing: 0.75px
-          line-height: 1.3em
-          margin-bottom: 20px
-        p
-          color: #000
-          font-size: 16px
-          line-height: 2em
-          a
-            color: #000
-            font-size: 16px
-            line-height: 2em
-            text-decoration: underline
-            transition: all 0.35s
-            overflow: hidden
-            text-overflow: ellipsis
-            max-width: 100%
-            display: block
-            &:hover
-              transition: all 0.35s
-              color: $main-color
+              &:hover
+                transition: all 0.35s
+                color: $main-color
 
 
 
@@ -1788,13 +1753,12 @@ body
 
 
 
-
+  .page_wrapper.impressum .content .list_impressum .item.long_div
   .page_wrapper.impressum
-    .row2
-      > div:first-child
-        margin-right: 30px
-      > div:last-child
-        width: 460px
+    .content
+      .list_impressum
+        .item.long_div
+          width: 490px
 
     .container
       width: 750px
@@ -2013,19 +1977,19 @@ body
 
 
   .page_wrapper.impressum
-    .row3
-      margin-bottom: 70px
-    .row3, .row2
-      > div
-        display: block
-        margin: 0 auto 30px!important
-        float: none
-        width: 100%!important
-        &:last-child
-          margin-bottom: 0!important
+    .content
+      .list_impressum
+        .item
+
+          display: block
+          margin: 0 auto 30px
+          width: 100%
+          &.long_div
+            width: 100%
+
 
     .content
-      padding-bottom: 70px
+      padding-bottom: 40px
     .container
       width: 100%
       margin: auto
