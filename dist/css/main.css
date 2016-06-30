@@ -1004,8 +1004,16 @@ body {
     top: 50%;
     right: 40px;
     margin-top: -140px; }
+    .page_wrapper.article .content .social .title {
+      color: #9299a6;
+      font-family: "NotoSans-Regular", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1em;
+      text-align: center;
+      margin-bottom: 36px; }
     .page_wrapper.article .content .social .at-share-tbx-element .at-share-btn {
-      margin: 0 auto 35px;
+      margin: 0 auto 36px;
       display: block;
       width: 70px;
       height: 70px;
@@ -1487,6 +1495,9 @@ body {
     top: 50%;
     right: 20px;
     margin-top: -60px; }
+    .page_wrapper.article .content .social .title {
+      margin-bottom: 20px;
+      color: #000; }
     .page_wrapper.article .content .social .at-share-tbx-element .at-share-btn {
       margin: 0 auto 20px;
       width: 40px;
