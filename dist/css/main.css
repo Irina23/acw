@@ -533,7 +533,6 @@ body {
       padding: 0 60px;
       text-align: center; }
       .block_reviews .item_reviews .text_reviews .text {
-        max-height: 136px;
         overflow: hidden;
         color: #000;
         font-size: 24px;
@@ -1060,13 +1059,6 @@ body {
       font-weight: normal;
       margin-bottom: 20px;
       font-family: "AvenirNextW1G-Demi", sans-serif; }
-    .page_wrapper.article .content .block_article h3 {
-      line-height: 1.2em;
-      color: #000;
-      font-size: 18px;
-      font-weight: normal;
-      margin-bottom: 20px;
-      font-family: "AvenirNextW1G-Demi", sans-serif; }
     .page_wrapper.article .content .block_article .data {
       margin-bottom: 25px;
       color: #9299a6;
@@ -1078,6 +1070,8 @@ body {
       margin-bottom: 20px; }
       .page_wrapper.article .content .block_article .img-holder img {
         width: 100%; }
+    .page_wrapper.article .content .block_article img {
+      width: 100%; }
     .page_wrapper.article .content .block_article p {
       margin-bottom: 30px;
       color: #7b7b7b;
@@ -1085,6 +1079,13 @@ body {
       line-height: 1.3em; }
       .page_wrapper.article .content .block_article p:last-child {
         margin-bottom: 0; }
+      .page_wrapper.article .content .block_article p srtong {
+        line-height: 1.2em;
+        color: #000;
+        font-size: 18px;
+        font-weight: normal;
+        margin-bottom: 20px;
+        font-family: "AvenirNextW1G-Demi", sans-serif; }
     .page_wrapper.article .content .block_article ul, .page_wrapper.article .content .block_article ol {
       margin-bottom: 30px; }
       .page_wrapper.article .content .block_article ul:last-child, .page_wrapper.article .content .block_article ol:last-child {
@@ -1093,8 +1094,7 @@ body {
         color: #7b7b7b;
         font-size: 16px;
         line-height: 1.3em; }
-    .page_wrapper.article .content .block_article q {
-      margin-bottom: 20px;
+    .page_wrapper.article .content .block_article em {
       display: block;
       text-align: center;
       color: #333;
@@ -1102,8 +1102,11 @@ body {
       font-size: 28px;
       line-height: 40px;
       position: relative;
+      font-style: normal;
       padding: 0 30px; }
-      .page_wrapper.article .content .block_article q:before {
+      .page_wrapper.article .content .block_article em + br {
+        display: none; }
+      .page_wrapper.article .content .block_article em:before {
         content: "";
         background: url("../img/icons/quote.svg") no-repeat;
         background-size: 100%;
@@ -1112,7 +1115,7 @@ body {
         position: absolute;
         top: 0;
         left: 0; }
-      .page_wrapper.article .content .block_article q:after {
+      .page_wrapper.article .content .block_article em:after {
         content: "";
         background: url("../img/icons/quote.svg") no-repeat;
         background-size: 100%;
@@ -1660,10 +1663,10 @@ body {
     margin: auto; }
     .page_wrapper.impressum .container h1 {
       font-size: 28px; }
-  .page_wrapper.article .content .block_article q {
+  .page_wrapper.article .content .block_article em {
     font-size: 24px;
     line-height: 1.3em; }
-    .page_wrapper.article .content .block_article q:after {
+    .page_wrapper.article .content .block_article em:after {
       right: 40px; }
   .page_wrapper.portfolio .content {
     padding: 100px 0; }

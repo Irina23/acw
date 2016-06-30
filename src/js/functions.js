@@ -18,6 +18,7 @@ jQuery(document).ready(function() {
             nav:true,
             autoplay:true,
             autoplayTimeout: 7000,
+            autoWidth:true,
             responsive:{
                 0:{
                     items:1
