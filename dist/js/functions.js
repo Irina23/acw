@@ -64,7 +64,28 @@ jQuery(document).ready(function() {
             });
 
         });
-       
+
+
+
+
+
+
+        (function addthis_sharing() {
+
+                if( $('#atstbx').length === 0 ) {
+
+                    $('.block_message').css('display', 'block');
+                    console.log('111');
+                    setTimeout(addthis_sharing, 500);
+
+                    } else{
+                    $('.block_message').css('display', 'none');
+                    console.log('222');
+                }
+
+        })();
+
+
     });
 
 
@@ -208,6 +229,7 @@ jQuery(document).ready(function() {
             });
         }*/
     });
+
 
 
 
