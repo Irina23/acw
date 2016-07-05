@@ -69,21 +69,28 @@ jQuery(document).ready(function() {
 
 
 
+        function addthis_sharing() {
+    
+            
+            if( $('#atstbx').length === 0 ) {
 
-        (function addthis_sharing() {
+                $('.block_message').css('display', 'block');
+                console.log('111');
 
-                if( $('#atstbx').length === 0 ) {
 
-                    $('.block_message').css('display', 'block');
-                    console.log('111');
-                    setTimeout(addthis_sharing, 500);
+            } else{
+                $('.block_message').css('display', 'none');
+                console.log('222');
+            }
 
-                    } else{
-                    $('.block_message').css('display', 'none');
-                    console.log('222');
-                }
+        };
+        var i = 0;
+        while (i < 10) {
+            setTimeout(addthis_sharing, 500);
 
-        })();
+            i++;
+        }
+        
         //print text
         $(function () {
             $("#typed").typed({
