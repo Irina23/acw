@@ -84,7 +84,14 @@ jQuery(document).ready(function() {
                 }
 
         })();
-
+        //print text
+        $(function () {
+            $("#typed").typed({
+                stringsElement: $("#typed-strings"),
+                typeSpeed: 130,
+                cursorChar: ""
+            });
+        });
 
     });
 
@@ -97,14 +104,7 @@ jQuery(document).ready(function() {
 
     });
 
-    //print text
-    $(function () {
-        $("#typed").typed({
-            stringsElement: $("#typed-strings"),
-            typeSpeed: 130,
-            cursorChar: ""
-        });
-    });
+
 
     //mobile menu
     jQuery(".navbar-toggle").on("click", function(){

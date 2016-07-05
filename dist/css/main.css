@@ -139,6 +139,8 @@ body {
       font-family: "Museo700-Regular-webfont", "AvenirNextW1G-Demi", sans-serif; }
       #header .logo a:hover {
         text-decoration: none; }
+      #header .logo a #typed-strings {
+        display: none; }
       #header .logo a #typed {
         display: inline-block;
         vertical-align: middle; }
