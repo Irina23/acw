@@ -556,7 +556,7 @@ body {
 
 .block_contacts {
   position: relative;
-  background: url("../img/bg/bg_footer2.png") no-repeat bottom center #dde0d9;
+  background: url("../img/bg/bg_footer2.png") no-repeat bottom center #d8dbd4;
   background-size: 350px auto; }
   .block_contacts .block_footer {
     background-image: -webkit-linear-gradient(top, #fff 0%, transparent 50%);

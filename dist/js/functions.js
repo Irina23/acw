@@ -70,17 +70,17 @@ jQuery(document).ready(function() {
 
 
         function addthis_sharing() {
-    
+
             
             if( $('#atstbx').length === 0 ) {
 
                 $('.block_message').css('display', 'block');
-                console.log('111');
+                //console.log('111');
 
 
             } else{
                 $('.block_message').css('display', 'none');
-                console.log('222');
+                //console.log('222');
             }
 
         };
