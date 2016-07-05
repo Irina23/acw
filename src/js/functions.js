@@ -72,16 +72,15 @@ jQuery(document).ready(function() {
         function addthis_sharing() {
 
             
-            if( $('#atstbx').length !== 0 ) {
+            if( $('#atstbx').length === 0 ) {
 
 
-                //console.log('111');
-                $('.block_message').css('display', 'none');
+                $('.block_message').css('display', 'block');
 
 
             } else{
-                $('.block_message').css('display', 'block');
-                //console.log('222');
+
+                $('.block_message').css('display', 'none');
             }
 
         };
@@ -252,6 +251,7 @@ window.onload = function(){
 
     if ($.browser.safari && !$.browser.mobile ) $('body').addClass('client-safari');
     if ($.browser.iphone || $.browser.ipad || $.browser.ipad) $('body').addClass('client-ios');
+    if ($.browser[ "windows phone" ]) $('body').addClass('windows_phone');
     
 
 };

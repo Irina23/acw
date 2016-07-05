@@ -1972,3 +1972,6 @@ body.client-safari .block_contacts .block_footer, body.client-ios .block_contact
 
 body.client-safari .page_wrapper.service .content:after, body.client-ios .page_wrapper.service .content:after {
   background: rgba(255, 255, 255, 0.8); }
+
+.windows_phone .social .block_message {
+  display: none !important; }
