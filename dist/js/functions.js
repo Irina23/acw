@@ -72,14 +72,15 @@ jQuery(document).ready(function() {
         function addthis_sharing() {
 
             
-            if( $('#atstbx').length === 0 ) {
+            if( $('#atstbx').length !== 0 ) {
 
-                $('.block_message').css('display', 'block');
+
                 //console.log('111');
+                $('.block_message').css('display', 'none');
 
 
             } else{
-                $('.block_message').css('display', 'none');
+                $('.block_message').css('display', 'block');
                 //console.log('222');
             }
 
