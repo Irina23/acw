@@ -1196,6 +1196,29 @@ body {
           -webkit-transition: all 0.35s;
           transition: all 0.35s;
           color: #00d89f; }
+    .page_wrapper.impressum .content .list_impressum .item ul, .page_wrapper.impressum .content .list_impressum .item ol {
+      margin-bottom: 30px; }
+      .page_wrapper.impressum .content .list_impressum .item ul:last-child, .page_wrapper.impressum .content .list_impressum .item ol:last-child {
+        margin-bottom: 0; }
+      .page_wrapper.impressum .content .list_impressum .item ul li, .page_wrapper.impressum .content .list_impressum .item ol li {
+        color: #000;
+        font-size: 16px;
+        line-height: 1.3em; }
+    .page_wrapper.impressum .content .list_impressum .item ol li {
+      list-style: decimal;
+      margin-left: 20px; }
+    .page_wrapper.impressum .content .list_impressum .item ol ul li {
+      padding-left: 20px;
+      position: relative; }
+      .page_wrapper.impressum .content .list_impressum .item ol ul li:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 7px;
+        width: 6px;
+        height: 6px;
+        border-radius: 6px;
+        background: #00d89f; }
 
 .page_wrapper.list_portfolio .content {
   padding: 125px 0 70px; }

@@ -1443,7 +1443,31 @@ body
                 transition: all 0.35s
                 color: $main-color
 
-
+          ul, ol
+            margin-bottom: 30px
+            &:last-child
+              margin-bottom: 0
+            li
+              color: #000
+              font-size: 16px
+              line-height: 1.3em
+          ol
+            li
+              list-style: decimal
+              margin-left: 20px
+            ul
+              li
+                padding-left: 20px
+                position: relative
+                &:before
+                  content: ""
+                  position: absolute
+                  left: 0
+                  top: 7px
+                  width: 6px
+                  height: 6px
+                  border-radius: 6px
+                  background: $main-color
 
 
   &.list_portfolio
