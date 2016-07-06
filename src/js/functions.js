@@ -33,20 +33,6 @@ jQuery(document).ready(function() {
         });
 
 
-        /*jQuery('.list_reviews').bxSlider({
-            nextText: "",
-            prevText: "",
-            auto: true,
-            pause: 7000,
-            onSliderLoad: function () {
-                $('.item_reviews:not(.bx-clone)').eq(0).addClass('active-slide').siblings().removeClass('active-slide');
-            },
-            onSlideAfter: function ($slideElement) {
-                $($slideElement).addClass('active-slide').siblings().removeClass('active-slide');
-            }
-
-
-        });*/
 
         //scroll link menu
         $(function() {
@@ -70,24 +56,15 @@ jQuery(document).ready(function() {
 
 
         function addthis_sharing() {
-
-            
             if( $('#atstbx').length === 0 ) {
-
-
                 $('.block_message').css('display', 'block');
-
-
             } else{
-
                 $('.block_message').css('display', 'none');
             }
-
         };
         var i = 0;
         while (i < 10) {
             setTimeout(addthis_sharing, 500);
-
             i++;
         }
         
@@ -174,7 +151,7 @@ jQuery(document).ready(function() {
 
 
     //form validate
-    jQuery("form").validate({
+    $("form").validate({
 
         rules:{
             name:{
@@ -197,6 +174,74 @@ jQuery(document).ready(function() {
 
 
     //filter portfolio
+    /*function filter_portfolio() {
+
+        var nav_active = $(this);
+        var customType = $(this).attr('data-cat');
+        if(customType===undefined){
+            $('.list_filter li').each( function () {
+                customType = $(this).find('active').attr('data-cat');
+            })
+        }
+        console.log(customType);
+        $(nav_active).addClass("active").siblings().removeClass("active");
+
+        if(customType==="all") {
+            $('.item-portfolio').show();
+        }else{
+            $('.item-portfolio').each(function(){
+                if(customType === $(this).attr('data-cat')) $(this).show(); else $(this).hide();
+            });
+        }
+
+    };
+    $(".list_filter li").on('click', function(){
+        filter_portfolio();
+        $(window).scroll();
+
+    });
+
+
+    //loading list portfolio
+    $(function () {
+
+
+        var page = 2;
+        var loading = $('#loading');
+
+        loading.show();
+
+        $(window).scroll(function() {
+
+            if ($('body').scrollTop() + $(window).height() > loading.offset().top) {
+
+                var handler = loading.data('handler');
+                if (loading.is(':visible') && handler) {
+                    $.request(handler, {
+                        data: {
+                            page: page
+                        },
+                        success: function (data) {
+                            page += 1;
+
+                            $(loading.data('content')).append(data.template);
+                            //filter_portfolio();
+                            //console.log(data.template);
+                            //console.log(data);
+
+                            if (!data.hasMorePages) {
+                                loading.hide();
+                            }
+                        }
+                    });
+                }
+            }
+
+        });
+
+    });*/
+
+    //filter portfolio
     jQuery(".list_filter li").click(function(){
         var nav_active = jQuery(this);
         //console.log(nav_active);
@@ -212,6 +257,7 @@ jQuery(document).ready(function() {
             jQuery('.item-portfolio').show();
         }else{
             jQuery('.item-portfolio').each(function(){
+                //if(jQuery(this).attr('data-cat').indexOf(customType) < 0) jQuery(this).hide(); else jQuery(this).show();
                 if(customType === jQuery(this).attr('data-cat')) jQuery(this).show(); else jQuery(this).hide();
             });
         }
@@ -219,25 +265,50 @@ jQuery(document).ready(function() {
 
     });
 
+    $(function () {
+        var page = 2;
+        var loading = $('#loading');
+        loading.show();
 
-    //loading list portfolio
-    $(window).scroll(function() {
+        //loading list portfolio
+        $(window).scroll(function() {
 
-        /*if ($(document).height() - $(window).height() == $(window).scrollTop()) {
-            $('#loading').show();
+            if ($(document).height() - $(window).height() == $(window).scrollTop()) {
 
-            $.ajax({
-                url: '',
-                dataType: 'html',
-                success: function(html) {
-                    $('.list_portfolios').append(html);
-                    $('#loading').hide();
+
+                //$.ajax({
+                //    url: '',
+                //    dataType: 'html',
+                //    success: function(html) {
+                //        $('.list_portfolios').append(html);
+                //        $('#loading').hide();
+                //    }
+                //});
+                var handler = loading.data('handler');
+
+                if (loading.is(':visible') && handler) {
+                    $.request(handler, {
+                        data: {
+                            page: page
+                        },
+                        success: function (data) {
+                            page += 1;
+
+                            $(loading.data('content')).append(data.template);
+
+                            console.log(data.template);
+                            console.log(data);
+
+                            if (!data.hasMorePages) {
+                                loading.hide();
+                            }
+                        }
+                    });
                 }
-            });
-        }*/
+            }
+        });
+
     });
-
-
 
 
 

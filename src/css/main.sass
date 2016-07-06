@@ -246,9 +246,9 @@ body
   //background: #6c5c5d
   background: #dde0d9
 
-  //&:before
+  &:before
 
-    background: linear-gradient(180deg, #f1f2f4 0%, #e8e9eb 100%)
+    background: linear-gradient(180deg, #f0f0f2 0%, #f0f0f2 100%)
     position: absolute
     top: 0
     left: 0
@@ -256,8 +256,8 @@ body
     height: 100%
     content: ""
     z-index: 1
-  //&:after
-    background: linear-gradient(180deg, #f4f5f7 0%, #edeef0 100%)
+  &:after
+    background: linear-gradient(180deg, #efe7e4 0%, #e8e3e0 100%)
     position: absolute
     top: 0
     right: 0
@@ -272,16 +272,16 @@ body
     position: relative
     z-index: 2
     &:after
-      background: url("../img/bg/bg_header2.png") no-repeat bottom right
+      background: url("../img/content/header.jpg") no-repeat bottom right
       //background-size: 100%
       position: absolute
       top: 0
       right: 0
-      width: 400px
+      width: 800px
       height: 100%
       content: ""
       z-index: 1
-      background-size: 85%
+      background-size: 131%
 
     h4
 
@@ -671,7 +671,7 @@ body
   position: relative
 
   //background: url("../img/bg/bg_footer2.png") no-repeat bottom center #f1f2f4
-  background: url("../img/bg/bg_footer2.png") no-repeat bottom center #d8dbd4
+  background: url("../img/bg/bg_footer2.png") no-repeat bottom center #f0f0f2
   background-size: 350px auto
 
 
@@ -980,7 +980,7 @@ body
         text-align: center
         line-height: 1em
         color: #000
-        font-size: 48px
+        font-size: 30px
         font-weight: normal
         margin-bottom: 60px
 
@@ -1130,7 +1130,7 @@ body
       text-align: center
       line-height: 1em
       color: #000
-      font-size: 48px
+      font-size: 30px
       font-weight: normal
       margin-bottom: 45px
     .desc
@@ -1386,7 +1386,7 @@ body
 
           line-height: 1.2em
           color: #000
-          font-size: 38px
+          font-size: 30px
           font-weight: normal
           margin-bottom: 20px
         h2
@@ -1533,7 +1533,7 @@ body
 
         line-height: 1em
         color: #000
-        font-size: 48px
+        font-size: 30px
         font-weight: normal
         margin-bottom: 40px
       .list_impressum
@@ -1610,7 +1610,7 @@ body
       padding: 125px 0 70px
     h1
       color: #000
-      font-size: 38px
+      font-size: 30px
       font-weight: normal
       line-height: 1em
       margin-bottom: 35px
@@ -1711,7 +1711,7 @@ body
       padding: 125px 0 70px
     h1
       color: #000
-      font-size: 38px
+      font-size: 30px
       font-weight: normal
       line-height: 1em
       margin-bottom: 15px
@@ -1834,9 +1834,12 @@ body
       opacity: 1
       animation-name: none!important
 
-  #header .container
+  #header .container, .block_img .container
     width: 750px
-
+  .block_img .container .block_text
+    font-size: 30px
+  .block_img .container:after
+    background-size: 115%
 
   .block_reviews
 
@@ -2015,19 +2018,21 @@ body
     .wrap
       width: 100%
 
-  .block_img .container .block_text
-    font-size: 42px
+
   .block_img
+    padding-top: 65px
     .container
-      padding: 120px 20px 50px
+      padding: 55px 20px 50px
+      width: 100%
       .block_text
-        width: 50%
+        width: 60%
         display: inline-block
         br
           display: none
 
     .container:after
-      background-size: 50%
+      background-size: contain
+      width: 100%
 
 
 
@@ -2258,7 +2263,7 @@ body
 
 
   .block_img .container .block_text
-    font-size: 24px
+    font-size: 22px
     i:after
       height: 32px
       width: 3px
@@ -2428,6 +2433,23 @@ body
 
   .block_img .container:after
     width: 100%
+
+
+  .block_img .container:after
+    background: url("../img/content/header_mobile.jpg") no-repeat bottom right
+    background-size: contain
+
+@media screen and (max-width: 400px)
+  .block_img .container:after
+    background: url("../img/content/header_mobile.jpg") no-repeat bottom right
+    background-size: cover
+  .block_img .container
+    padding: 160px 20px 30px
+    .block_text
+      font-size: 22px
+      padding: 10px
+      background: rgba(255, 255, 255, 0.76)
+      width: 100%
 
 
 body
