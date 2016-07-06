@@ -100,7 +100,7 @@ body {
   font-family: "BorgiaPro-Regular", sans-serif;
   font-size: 31px;
   letter-spacing: -0.27px;
-  line-height: 1em; }
+  line-height: 1.3em; }
   [class^="block_"] .block_text i {
     font-style: normal;
     color: #00d89f;
@@ -570,7 +570,7 @@ body {
     font-family: "BorgiaPro-Regular", sans-serif;
     font-size: 30px;
     letter-spacing: -0.27px;
-    line-height: 1em; }
+    line-height: 1.3em; }
     .block_contacts .block_text i {
       font-style: normal;
       color: #00d89f;
