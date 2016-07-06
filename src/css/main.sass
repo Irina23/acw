@@ -245,6 +245,7 @@ body
   position: relative
   //background: #6c5c5d
   background: #dde0d9
+  min-height: 430px
 
   &:before
 
@@ -269,20 +270,20 @@ body
 
   .container
     padding: 197px 0 150px
-    position: relative
-    z-index: 2
+    //position: relative
+    //z-index: 2
     &:after
       background: url("../img/content/header.jpg") no-repeat bottom right
       //background-size: 100%
       position: absolute
-      top: 0
       right: 0
-      width: 800px
-      height: 100%
+      width: 100%
       content: ""
-      z-index: 1
-      background-size: 131%
-
+      z-index: 2
+      bottom: 0
+      height: calc(100% - 73px)
+      background-size: auto 100%
+      min-height: 430px
     h4
 
       position: relative
@@ -293,7 +294,7 @@ body
       min-height: 150px
       width: 460px
       position: relative
-      z-index: 2
+      z-index: 3
       font-family: "BorgiaPro-Regular", sans-serif
       font-size: 40px
       font-weight: 400
@@ -1544,7 +1545,7 @@ body
           margin-right: 30px
           margin-bottom: 150px
           float: left
-          &:first-child
+          //&:first-child
             margin-top: 30px
           &:nth-child(3n), &.long_div
             margin-right: 0
@@ -1552,7 +1553,7 @@ body
             width: 615px
 
           h3
-
+            //text-transform: uppercase
             color: #000
             font-family: "AvenirNextW1G-Demi", sans-serif
             font-size: 18px
@@ -1807,9 +1808,9 @@ body
 
 
 
-@media screen and (max-width: 1023px)
+//@media screen and (max-width: 1050px)
   .block_img .container:after
-    right: 0
+    background-size: 103%
 
 
 
@@ -1838,8 +1839,8 @@ body
     width: 750px
   .block_img .container .block_text
     font-size: 30px
-  .block_img .container:after
-    background-size: 115%
+  //.block_img .container:after
+    height: calc(100% - 67px)
 
   .block_reviews
 
@@ -2020,7 +2021,7 @@ body
 
 
   .block_img
-    padding-top: 65px
+    margin-top: 65px
     .container
       padding: 55px 20px 50px
       width: 100%
@@ -2030,7 +2031,7 @@ body
         br
           display: none
 
-    .container:after
+    //.container:after
       background-size: contain
       width: 100%
 
@@ -2435,9 +2436,12 @@ body
     width: 100%
 
 
-  .block_img .container:after
-    background: url("../img/content/header_mobile.jpg") no-repeat bottom right
-    background-size: contain
+  .block_img
+    min-height: 370px
+    .container:after
+      background: url("../img/content/header_mobile.jpg") no-repeat bottom right
+      background-size: contain
+      min-height: 370px
 
 @media screen and (max-width: 400px)
   .block_img .container:after
