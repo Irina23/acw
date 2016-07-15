@@ -98,7 +98,7 @@ body {
 [class^="block_"] .block_text {
   color: #000;
   font-family: "BorgiaPro-Regular", sans-serif;
-  font-size: 31px;
+  font-size: 35px;
   letter-spacing: -0.27px;
   line-height: 1.3em; }
   [class^="block_"] .block_text i {
@@ -249,14 +249,14 @@ body {
       min-height: 430px; }
     .block_img .container h4 {
       position: relative;
-      z-index: 2; }
+      z-index: 3; }
     .block_img .container .block_text {
       min-height: 150px;
       width: 460px;
       position: relative;
       z-index: 3;
       font-family: "BorgiaPro-Regular", sans-serif;
-      font-size: 40px;
+      font-size: 35px;
       font-weight: 400;
       letter-spacing: -0.27px;
       line-height: 1.2em;
@@ -578,7 +578,7 @@ body {
     margin-bottom: 80px;
     color: #000;
     font-family: "BorgiaPro-Regular", sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: -0.27px;
     line-height: 1.3em; }
     .block_contacts .block_text i {
@@ -671,7 +671,9 @@ body {
 
 .footer {
   background: #ebebeb;
-  padding: 25px 0; }
+  padding: 25px 0;
+  position: relative;
+  z-index: 3; }
   .footer .contact {
     float: left; }
     .footer .contact p {
@@ -834,7 +836,7 @@ body {
     text-align: center;
     line-height: 1em;
     color: #000;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: normal;
     margin-bottom: 60px; }
   .page_wrapper.services .content .list_services {
@@ -954,7 +956,7 @@ body {
   text-align: center;
   line-height: 1em;
   color: #000;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: normal;
   margin-bottom: 45px; }
 
@@ -1289,13 +1291,16 @@ body {
     vertical-align: middle;
     width: calc((100% - 60px)/3);
     margin-right: 30px;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
     float: left; }
     .page_wrapper.impressum .content .list_impressum .item:nth-child(3n), .page_wrapper.impressum .content .list_impressum .item.long_div {
       margin-right: 0; }
     .page_wrapper.impressum .content .list_impressum .item.long_div {
-      width: 615px; }
+      width: 100%; }
+      .page_wrapper.impressum .content .list_impressum .item.long_div h3 {
+        text-align: center; }
     .page_wrapper.impressum .content .list_impressum .item h3 {
+      text-transform: uppercase;
       color: #000;
       font-family: "AvenirNextW1G-Demi", sans-serif;
       font-size: 18px;
@@ -1456,7 +1461,6 @@ body {
   margin-bottom: 15px; }
 
 .page_wrapper.blog .desc_blog {
-  width: 480px;
   color: #7b7b7b;
   font-size: 16px;
   line-height: 1.3em;
@@ -1536,6 +1540,41 @@ body {
   display: none;
   text-align: center;
   line-height: 1.2em; }
+
+.blocking #header {
+  text-align: center; }
+  .blocking #header .logo {
+    float: none; }
+
+.blocking .content .container {
+  padding: 300px 0;
+  position: relative;
+  z-index: 3; }
+
+.blocking .content:after {
+  background-image: -webkit-linear-gradient(top, transparent 0%, white 100%), -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.62) 30%, rgba(255, 255, 255, 0.88) 63%, white 100%);
+  background-image: linear-gradient(180deg, transparent 0%, white 100%), linear-gradient(to top, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.62) 30%, rgba(255, 255, 255, 0.88) 63%, white 100%);
+  position: absolute;
+  top: 73px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 73px);
+  z-index: 2;
+  content: ""; }
+
+.blocking .content h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 1em;
+  color: #00d89f; }
+
+@media screen and (max-width: 1024px) {
+  .block_advantages .list_advantages .item_advantage .block_advantage,
+  .block_advantages .list_advantages .item_advantage .number {
+    opacity: 1;
+    -webkit-animation-name: none !important;
+    animation-name: none !important; } }
 
 @media screen and (max-width: 992px) {
   .container {
@@ -1626,7 +1665,7 @@ body {
   .page_wrapper.article .content .block_article {
     margin: auto; }
   .page_wrapper.impressum .content .list_impressum .item.long_div {
-    width: 490px; }
+    width: 100%; }
   .page_wrapper.impressum .container {
     width: 750px; }
   .page_wrapper.list_portfolio .container {

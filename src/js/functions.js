@@ -72,7 +72,7 @@ jQuery(document).ready(function() {
         $(function () {
             $("#typed").typed({
                 stringsElement: $("#typed-strings"),
-                typeSpeed: 130,
+                typeSpeed: 150,
                 cursorChar: ""
             });
         });
