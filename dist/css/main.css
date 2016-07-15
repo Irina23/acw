@@ -566,8 +566,8 @@ body {
 
 .block_contacts {
   position: relative;
-  background: url("../img/bg/bg_footer2.png") no-repeat bottom center #f0f0f2;
-  background-size: 350px auto; }
+  background: url("../img/bg/bg_footer3.jpg") no-repeat bottom right #f0f0f2;
+  background-size: 100%; }
   .block_contacts .block_footer {
     background-image: -webkit-linear-gradient(top, #fff 0%, transparent 50%);
     background-image: linear-gradient(180deg, #fff 0%, transparent 50%);
@@ -599,14 +599,11 @@ body {
   .block_contacts .list_contacts {
     text-align: center; }
     .block_contacts .list_contacts .item_contact {
-      display: inline-block;
+      display: block;
       vertical-align: top;
       text-align: left;
-      max-width: 250px; }
-      .block_contacts .list_contacts .item_contact:first-child {
-        float: left; }
-      .block_contacts .list_contacts .item_contact:last-child {
-        float: right; }
+      max-width: 250px;
+      margin-bottom: 40px; }
       .block_contacts .list_contacts .item_contact h5 {
         font-family: "AvenirNextW1G-Demi", sans-serif;
         text-transform: uppercase;
@@ -1542,32 +1539,22 @@ body {
   line-height: 1.2em; }
 
 .blocking #header {
-  text-align: center; }
+  text-align: center;
+  min-height: 67px; }
   .blocking #header .logo {
     float: none; }
 
-.blocking .content .container {
-  padding: 300px 0;
-  position: relative;
-  z-index: 3; }
+.blocking .content {
+  padding: 300px 0; }
+  .blocking .content h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 1em;
+    color: #00d89f; }
 
-.blocking .content:after {
-  background-image: -webkit-linear-gradient(top, transparent 0%, white 100%), -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.62) 30%, rgba(255, 255, 255, 0.88) 63%, white 100%);
-  background-image: linear-gradient(180deg, transparent 0%, white 100%), linear-gradient(to top, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.62) 30%, rgba(255, 255, 255, 0.88) 63%, white 100%);
-  position: absolute;
-  top: 73px;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 73px);
-  z-index: 2;
-  content: ""; }
-
-.blocking .content h3 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 35px;
-  line-height: 1em;
-  color: #00d89f; }
+.blocking .footer .link_impressum {
+  display: none; }
 
 @media screen and (max-width: 1024px) {
   .block_advantages .list_advantages .item_advantage .block_advantage,
@@ -1947,7 +1934,9 @@ body {
     padding: 0;
     margin-bottom: 50px; }
   .page_wrapper.blog h1 {
-    font-size: 28px; } }
+    font-size: 28px; }
+  .blocking .content {
+    padding: 150px 0; } }
 
 @media screen and (max-width: 635px) {
   .page_wrapper.list_portfolio .list_portfolios .item-portfolio,
